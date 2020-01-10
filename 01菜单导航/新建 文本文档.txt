@@ -1,0 +1,15 @@
+这次的导航栏下拉菜单不是全CSS，是参考了中国站长站的站长工具的导航栏，自己学习整理了下。为了方便日后重温，放在这里共享下。首先调用一个CSS和JS。
+<LINK href="menu.css" type=text/css rel=stylesheet>
+<SCRIPT src="menu.js" type=text/javascript></SCRIPT>
+在大栏目中的使用链接
+<A onmouseover="mouseover(this, 3)" style="CURSOR: pointer" onmouseout=mouseout()>大类一大类一</A> 
+在导航栏的下拉菜单中
+<DIV class=menu-list id=menu3 onmouseover=_mouseover() onmouseout=_mouseout()>
+<UL>
+  <LI><A href="#" target=_blank><SPAN>小类一小类一</SPAN></A> 
+  <LI><A href="#"><SPAN>小类一小类一</SPAN></A> 
+  <LI><A href="#"><SPAN>小类一小类一</SPAN></A> 
+  <LI><A href="#"><SPAN>小类一小类一</SPAN></A> 
+  <LI><A href="#"><SPAN>小类一小类一</SPAN></A> 
+</LI></UL></DIV>
+如此，其他的类似。另外为了使下拉菜单中的使用圆角，采用了左右两个小图片来实现的。具体的我放在附件中啦！

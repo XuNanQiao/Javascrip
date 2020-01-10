@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>slide区</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<link rel="stylesheet" type="text/css" href="slide/index.css">
+<SCRIPT src="slide/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT type=text/javascript>
+
+function dailychose_initCallback(carousel) {
+    $('#daily .g_bd .jcarousel-next').bind('click', function() {
+        carousel.next();
+        addHtml();
+        return false;
+    });
+    $('#daily .g_bd .jcarousel-prev').bind('click', function() {
+        carousel.prev();
+        addHtml();
+        return false;
+    });
+};
+$(document).ready(function() {
+	// 焦点图
+	$('#focus_content').codaSlider({
+	autoSlide: true,
+	autoSlideInterval: 4000,
+	autoSlideStopWhenClicked: false,
+	dynamicArrows: false,
+	crossLinking: false,
+	dynamicTabsAlign: "right"
+	});
+	// 时尚轮播
+	$('#fashiongallery ul').jcarousel({
+		wrap:"both",
+		scroll:1
+    });
+	// 每日公告
+	$('#dailyscroll').jcarousel({
+		scroll:1,
+		start:7
+    });
+	$('#daily_chose ul').jcarousel({
+		scroll:1,
+		start:7,
+		animation:0,
+		initCallback:dailychose_initCallback,
+		buttonNextHTML: null,
+        buttonPrevHTML: null
+    });
+});
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class=coda-slider-wrapper id=focus>
+<DIV class="coda-slider preload" id=focus_content>
+
+<DIV class=panel>
+<DIV class=panel-wrapper><A href="#" target=_blank><IMG height=300 src="slide/127510849685639500.jpg" width=724 border="0"></A> </DIV>
+</DIV>
+
+<DIV class=panel>
+<DIV class=panel-wrapper><A href="#" target=_blank><IMG height=300 src="slide/127504667702143500.jpg" width=724 border="0"></A> </DIV>
+</DIV>
+
+<DIV class=panel>
+<DIV class=panel-wrapper><A href="#" target=_blank><IMG height=300 src="slide/127504664263633100.jpg" width=724 border="0"></A> </DIV>
+</DIV>
+
+<DIV class=panel>
+<DIV class=panel-wrapper><A href="#" target=_blank><IMG height=300 src="slide/127492492709923400.jpg" width=724 border="0"></A> </DIV>
+</DIV>
+
+<DIV class=panel>
+<DIV class=panel-wrapper><A href="#" target=_blank><IMG height=300 src="slide/127485539676634000.jpg" width=724 border="0"></A></DIV>
+</DIV>
+
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

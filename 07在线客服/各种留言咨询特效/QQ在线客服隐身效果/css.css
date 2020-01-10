@@ -1,0 +1,21 @@
+
+
+body {
+	font-size:12px;
+	}
+.clear{overflow:hidden;height:1px;clear:both;}
+.h8{height:8px;}
+a{color:#333;}
+a:hover{color:#cc0000;}
+/*=µ×²¿
+TPL_BOTTOM
+=============================================================================================*/
+
+
+#FootContent *{
+padding:0px;
+margin:0px;
+line-height:22px;
+text-align:center;
+color:#333;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>显示和隐藏文字特效-懒人图库</title>
+<style type="text/css">
+<!--
+.STYLE1 {
+	color: #000000;
+	font-weight: bold;
+	font-size: 18px;
+}
+-->
+</style>
+</head>
+
+<body>
+<p>
+  <SCRIPT type=text/javascript>
+ function show_hiddendiv(){
+ 	document.getElementById("hidden_div").style.display='block';
+ 	document.getElementById("_strHref").href='javascript:hidden_showdiv();';
+ 	document.getElementById("_strSpan").innerHTML="隐藏部分";
+ }
+ function hidden_showdiv(){
+ 	document.getElementById("hidden_div").style.display='none';
+ 	document.getElementById("_strHref").href='javascript:show_hiddendiv();';
+ 	document.getElementById("_strSpan").innerHTML="显示全部";
+ }
+  </SCRIPT>
+ 会议内容：强调的主要内容<SPAN style="DISPLAY: none" id=hidden_div>一、大家继续努力；二、继续努力</SPAN>...(<A 
+id=_strHref href="javascript:show_hiddendiv();"><SPAN 
+id=_strSpan>显示全部</SPAN></SPAN></A>)</p>
+
+</body>
+</html>

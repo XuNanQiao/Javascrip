@@ -1,0 +1,22 @@
+在火狐下不支持document.all及其它JS代码问题
+
+
+
+
+
+
+
+ 1. document.all() 在FF里不行. 必须改成document.getElementById();
+2. obj.innerText = "XXX"; 在FF里好像偶尔也有问题. 换成obj.innerHTML = "XXX";就行了.
+3. var olE = document.body.onload; 获得body的onload函数. IE没问题.FF不行.改成window.onload.解决.
+至于window.onload和body.onload有什么区别.. 还有待百度一下.
+4. 在IE中.event对象有x,y属性. FF没有. event.x在FF里应该是event.pageX
+解 决办法. mX = event.x ? event.x : event.pageX; 然后用 mX 代替 event.x.
+5. 最可恨的是Ajax在FF里不能同步调用！！！
+比如 xmlHttp.open("get","xxx.aspx?id=xx",true); //true表示异步
+在IE和FF里都没问题。 但是 xmlHttp.open("get","xxx.aspx?id=xx",false); 在IE没问题.在FF里就不行!!
+这个问题还没找 到解决办法.
+解决也很简单 不用document.all就行了 那么用什么呢? 
+如下: getElementsByTagName_r("*") 可以得到得到所有元素的集合
+ getElemntById 可以按id得到某一元素 
+getElementsByName 可以得到按name属性得到某一元素 

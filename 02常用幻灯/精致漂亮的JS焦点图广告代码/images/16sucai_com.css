@@ -1,0 +1,33 @@
+/*
+更新时间:2010-12-6
+版本:ent_v1.0.0
+作者:goldenchen#tencent.com
+收集整理：一流素材网www.16sucai.com
+*/
+/*Reset css*/
+body{font-family:"宋体";font-size:12px;background:#fff;color:#333;margin:0;padding:0;}
+div,form,img,ul,ol,li,dl,dt,dd{margin:0;padding:0;border:0;}
+li{list-style:none;}
+table{border-collapse:collapse;}
+h1,h2,h3,h4,h5,h6,p,select,td{margin:0;padding:0;font-size:12px;}
+/*全局设置*/
+a{color:#1D569C;text-decoration:none;}
+a:hover{color:#ED3E22;text-decoration:underline;}
+a:hover p{text-decoration:none;}
+/*娱乐首屏*/
+.focus_box{height:426px; width:310px; margin:0px auto;}
+.focus{width:304px;height:396px;float:left;border:3px solid #d9d9d9;margin-top:15px;position:relative;}
+.focus #pic{width:304px;height:396px;overflow:hidden;}
+.focus #pic ul{width:1216px;height:396px;float:left;}
+.focus #pic li{width:304px;height:396px;float:left;}
+.focus #pic li img{width:304px;height:396px;float:left;}
+.focus .tip-bg{width:304px;height:21px;background:url(http://mat1.gtimg.com/ent/ent2010/focus_tip_bg.png) no-repeat left top;position:absolute;left:0;bottom:0;z-index:12;}
+.focus #tip{width:96px;height:14px;position:absolute;left:104px;bottom:3px;z-index:13;}
+.focus #tip ul li{width:14px;height:14px;float:left;display:inline;margin:0 5px;cursor:pointer;background:url(http://mat1.gtimg.com/ent/ent2010/focus_tip.png) no-repeat;}
+.focus #tip ul li.current{background:url(http://mat1.gtimg.com/ent/ent2010/focus_tip_current.png) no-repeat;}
+.focus .btn{width:42px;height:9px;position:absolute;right:0;bottom:5px;z-index:14;overflow:hidden;}
+.focus .btn ul{width:100%;float:left;}
+.focus .btn li{width:7px;height:9px;float:left;display:inline;margin:0 7px;cursor:pointer;overflow:hidden;}
+.focus .btn li.btn-left{background:url(http://mat1.gtimg.com/ent/ent2010/focus_btn_left.png) no-repeat left top;}
+.focus .btn li.btn-right{background:url(http://mat1.gtimg.com/ent/ent2010/focus_btn_right.png) no-repeat left top;}
+.focus .show{display:block!important;}

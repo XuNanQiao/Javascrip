@@ -1,0 +1,28 @@
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #fff; MARGIN: 0px; COLOR: #333333; FONT-FAMILY: "ËÎÌו"
+}
+TD {
+	FONT-SIZE: 12px; BACKGROUND: #fff; MARGIN: 0px; COLOR: #333333; FONT-FAMILY: "ËÎÌו"
+}
+
+
+
+
+#qqService .top {
+	CLEAR: left; BACKGROUND-IMAGE: url(1/top.gif); WIDTH: 128px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 50px
+}
+#qqService .top DIV {
+	DISPLAY: block; FLOAT: right; WIDTH: 20px; CURSOR: pointer; HEIGHT: 20px
+}
+#qqService .mid {
+	CLEAR: left; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND-IMAGE: url(1/middle.gif); PADDING-BOTTOM: 10px; WIDTH: 128px; PADDING-TOP: 10px; BACKGROUND-REPEAT: repeat-y
+}
+#qqService .mid B {
+	BACKGROUND-POSITION: 8px 5px; MARGIN-TOP: 0px; DISPLAY: block; BACKGROUND-IMAGE: url(1/c.gif); MARGIN-BOTTOM: 5px; WIDTH: 108px; LINE-HEIGHT: 25px; BORDER-BOTTOM: #f2f2f2 1px solid; BACKGROUND-REPEAT: no-repeat; TEXT-ALIGN: center
+}
+#qqService .mid P {
+	CLEAR: left; PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; FONT-SIZE: 12px; PADDING-BOTTOM: 2px; MARGIN: 0px; COLOR: #333333; LINE-HEIGHT: 20px; PADDING-TOP: 2px; HEIGHT: 20px
+}
+#qqService .bot {
+	CLEAR: left; BACKGROUND-IMAGE: url(1/bottom.gif); WIDTH: 128px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 10px
+}

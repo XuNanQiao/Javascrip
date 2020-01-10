@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GB2312"?>
+<imgList>
+<pic>
+
+<list path="3.jpg" smallpath="siteengine.gif" smallinfo="尽善尽美 精益求精 铸造精品">#</list>
+<list path="2.jpg" smallpath="site.gif" smallinfo="6年经验专注高品质网站建设，助企业走向成功！">#</list>
+<list path="4.jpg" smallpath="4.gif" smallinfo="善学者善思、善思者善行!">#</list>
+<list path="1.jpg" smallpath="solutions.gif" smallinfo="大道至简 远见者富;远见者健行!">#</list>
+
+
+</pic>
+<rollTime fade_in="10">4</rollTime>
+<text font="Verdana,宋体" size="12" color="0x333333"/>
+</imgList>

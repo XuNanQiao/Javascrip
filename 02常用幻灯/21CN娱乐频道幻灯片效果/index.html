@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为21CN娱乐频道幻灯片效果，属于站长常用代码，更多焦点图代码请访问懒人图库JS代码频道。" />
+<title>21CN娱乐频道幻灯片效果_懒人图库</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<link href="css/lanrentuku.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<br />
+<br />
+<table width="302" height="488" border="0" align="center" cellpadding="0" cellspacing="0" background="images/p14.gif">
+          <tr> 
+            <td valign="top"><div id="Layer6"> 
+                <div id="Layer4"> 
+                  <TABLE cellSpacing=0 width=280>
+                    <TBODY>
+                      <TR> 
+                        <TD 
+                vAlign=top bgcolor="#000000" style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><SCRIPT language=javascript type=text/javascript>
+      <!--
+/* Data begin */
+var sPicArr = new Array();
+sPicArr[0] = new Array(
+"images/01.jpg",
+"谢霆锋秀与柏芝甜蜜照",
+"　　为免相机中的私密照外泄，霆锋将电脑交助手保管，并禁止记者拍照……",
+"http://www.lanrentuku.com/"
+);
+sPicArr[1]= new Array(
+"images/02.jpg",
+"张韶涵爆肥6公斤面目全非",
+"　　一向骨感的张韶涵变胖了，不仅小腹变凸、手臂变粗、就连下巴都多了一圈肉……",
+"http://www.lanrentuku.com/"
+);
+sPicArr[2] = new Array(
+"images/03.jpg",
+"魔幻片《画皮》时代背景定汉朝",
+"　　即将于9月28日上映的东方新魔幻电影《画皮》，日前又曝光新剧照……",
+"http://www.lanrentuku.com/"
+);
+sPicArr[3] = new Array(
+"images/04.jpg",
+"新《红楼》湘云宝琴香菱薛蟠亮相",
+"　　新《红楼梦》再公布4个角色造型：香菱、薛蟠、大小薛宝琴、大小史湘云……",
+"http://www.lanrentuku.com/"
+);
+sPicArr[4]= new Array(
+"images/05.jpg",
+"勇敢“出柜”的同性恋明星",
+"　　“出柜”是同性恋圈子中的专有名词，意思是向公众公开自己的同性恋取向……",
+"http://www.lanrentuku.com/"
+);
+/* Data end */
+function GetObj(objName){
+if(document.getElementById){
+return eval('document.getElementById("' + objName + '")');
+}else if(document.layers){
+return eval("document.layers['" + objName +"']");
+}else{
+return eval('document.all.' + objName);
+}
+}
+var plPic = new Image();
+var gIndex = 0;
+function SlidePic(index){
+gIndex = index;
+//patch by dorian 1017
+if ('Microsoft Internet Explorer' == navigator.appName)
+{
+document.images["slidePic"].filters.item(0).Apply();
+}
+document.images["slidePic"].src = sPicArr[index][0];
+document.images["slidePic"].alt = sPicArr[index][1];
+GetObj("slidePicLink").href = sPicArr[index][3];
+GetObj("slideTitle").innerHTML = sPicArr[index][1];
+GetObj("slideDesc").innerHTML = sPicArr[index][2];
+GetObj("slideLink").innerHTML = "[<a href='"+sPicArr[index][3]+"' target=_blank class=underline2 title='全文'>全文</a>]";
+if((index+1)<sPicArr.length) plPic.src = sPicArr[index+1][0];//preload;
+for(var i=0;i<sPicArr.length;i++){
+GetObj("item"+i).className = "itemOff";
+GetObj("item"+i).onmouseover = function(){return false;}
+GetObj("item"+i).onmouseout = function(){return false;}
+}
+GetObj("item"+index).className = "itemOn";
+if ('Microsoft Internet Explorer' == navigator.appName)
+{
+document.images["slidePic"].filters.item(0).play();
+}
+}
+function NextPic(){
+gIndex = ((gIndex+1)>=sPicArr.length?0:(gIndex+1));
+SlidePic(gIndex);
+}
+function PrevPic(){
+//alert(gIndex);
+gIndex = ((gIndex-1)<0?(sPicArr.length-1):(gIndex-1));
+//alert(gIndex);
+SlidePic(gIndex);
+}
+var sid;
+function inislide()
+{
+if(sid==null) sid = setInterval('NextPic()', 3000);//fixed by AmourGUO, 051017
+}
+function pauseslide()
+{
+clearInterval(sid);
+sid = null;
+}
+//-->
+          </SCRIPT> </TD>
+                      </TR>
+                    </TBODY>
+                  </TABLE>
+                  <TABLE width=280 height="400" align="center" cellSpacing=0>
+                    <TBODY>
+                      <TR> 
+                        <TD height=400 
+                align=middle valign="top" 
+                style="PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px"><A id=slidePicLink 
+                  title="" href="http://www.lanrentuku.com/" 
+                  target=_blank><IMG id=slidePic onmouseover=pauseslide(); 
+      style="BORDER-RIGHT: #000000 4px solid; BORDER-TOP: #000000 3px solid; FILTER: progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0, wipeStyle=0, motion=forward); BORDER-LEFT: #000000 4px solid; BORDER-BOTTOM: #000000 4px solid" 
+                  onmouseout=inislide(); height=400 alt="" 
+                  src="#" width=272 border=0 
+                  name=slidePic></A> <SCRIPT>document.getElementById("slidePic").src=sPicArr[0][0];</SCRIPT> 
+                          <SCRIPT>document.getElementById("slidePicLink").href=sPicArr[0][3];</SCRIPT></TD>
+                      </TR>
+                      <TR> </TR>
+                    </TBODY>
+                  </TABLE>
+                </div>
+                <div id="Layer5"> 
+                  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="302" height="488">
+                    <param name="movie" value="images/bp.swf" />
+                    <param name="quality" value="high" />
+                    <param name="wmode" value="transparent">
+                    <embed src="images/bp.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="302" height="488"></embed> 
+                  </object>
+                </div>
+                <div id="Layer2" > 
+                  <table width="270" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr> 
+                      <td height="24" class="link14bl3">劲爆星闻</td>
+                    </tr>
+                  </table>
+                  <TABLE width=270 border="0" align=center cellpadding="0" 
+                  cellSpacing=0 onmouseover=pauseslide() onmouseout=inislide()>
+                    <TR> 
+                      <TD align=left><IMG style="CURSOR: pointer" 
+                        onclick=PrevPic();pauseslide();inislide() height=17 
+                        alt=上一张 src="images/gw_news_img_05.gif" 
+                      width=7></TD>
+                      <TD width=120><SCRIPT language=javascript type=text/javascript>
+<!--
+document.writeln("<table width=100% cellspacing=0>");
+document.writeln("<tr>");
+document.writeln("<td >&nbsp;</td>");
+document.writeln("<td id='item0' width=11 height=11 class=itemOn onClick='SlidePic(0)'>1</td>");
+for(var i=1;i<sPicArr.length;i++){
+document.writeln("<td>&nbsp;</td>");
+document.writeln("<td id='item"+i+"' width=11 height=11 class=itemOff onClick='SlidePic("+i+");'>"+(i+1)+"</td>");//fixed by AmourGUO, 051017
+}
+document.writeln("<td>&nbsp;</td>");
+document.writeln("</tr>");
+document.writeln("</table>");
+//-->
+            </SCRIPT></TD>
+                      <TD align=left width=146><IMG style="CURSOR: pointer" 
+                        onclick=NextPic();pauseslide();inislide() height=17 
+                        alt=下一张 src="images/gw_news_img_06.gif" 
+                      width=7></TD>
+                    </TR>
+                  </TABLE>
+                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr> 
+                      <td height="9"></td>
+                    </tr>
+                  </table>
+                  <TABLE width=270 align="center" cellSpacing=0>
+                    <TBODY>
+                    <TD class=left1 onmouseover=pauseslide(); onmouseout=inislide(); height=64><DIV class=link14w2   id=slideTitle 
+                  style="FONT-WEIGHT: bold">谢霆锋秀与柏芝甜蜜照</DIV>
+                      <DIV class=underline3b   style="MARGIN-TOP: 7px"><SPAN 
+                  id=slideDesc>　　为免相机中的私密照外泄，霆锋将电脑交助手保管，并禁止记者拍照……</SPAN>&nbsp;<SPAN 
+                  id=slideLink>[<A href="http://www.lanrentuku.com/" 
+                  target=_blank class="underline2" >全文</A>]</SPAN></DIV></TD>
+                    </TR>
+                  </TABLE>
+                </div>
+              </div></td>
+          </tr>
+</table>
+      <p align="center">来源：<a href="http://et.21cn.com/" target="_blank">21cn娱乐中心</a>　代码整理：<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a>　<br>
+        <br>
+＊尊重他人劳动成果，转载请自觉注明出处！ 注：此代码仅供学习交流，请勿用于商业用途。</p>
+      <p align="center"></p>
+      <p align="center"></p>
+      <p align="center"></p>
+      <p align="center">&nbsp;</p>
+      <p align="center"></p>
+</body>
+</html>

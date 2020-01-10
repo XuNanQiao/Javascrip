@@ -1,0 +1,107 @@
+/*----- 初始化设置 -----*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0}
+address,b,caption,cite,code,dfn,em,i,q,th { font-weight:normal; font-style:normal}
+big,h1,h2,h3,h4,h5,h6,small { font-size:100%}
+caption,th { text-align:left}
+del { font-family:Simsun}
+dfn { padding-right:2px; text-decoration:none; font-family:Arial}
+fieldset,img { border:0}
+input,select,textarea{ outline-style:none}
+li { list-style:none}
+q { quotes:none}
+q:before,q:after { content:""}
+strong { font-weight:bold}
+table { border-collapse:collapse; border-spacing:0}
+th { text-align:left}
+
+/* clear float */
+.cf { zoom:1}
+.cf:after { content:"."; clear:both; display:block; overflow:hidden; visibility:hidden; height:0; font-size:0}
+
+/* body */
+body { font:normal 12px/20px "Microsoft Yahei", Tahoma, Arial, sans-serif, Simsun; color:#656565; background:#eee}
+
+/* link */
+a { color:#656565; text-decoration:none; outline-style:none}
+a:hover { color:#c00; text-decoration:underline}
+
+/*----- 布局 -----*/
+.g-wrap { width:980px; margin:0 auto; padding-top:6px}
+.g-area02 { float:left; width:260px}
+
+/*----- 容器 -----*/
+
+/* space */
+.g-spc01 { margin-bottom:6px}
+
+/* block */
+.g-blk01 { border:1px solid #dbdbdb; background:url(images/XL_v2_g_block.png) left bottom repeat-x #fff}
+.g-blk01 .ttl { height:46px; background:url(images/XL_v2_g_block.png) 0 0 repeat-x #e6e6e6}
+.g-blk01 .ttl h2 { overflow:hidden; height:20px; padding:12px 16px 8px; line-height:20px; font-size:16px}
+.g-blk01 .ttl01 h2 { padding-left:20px; padding-right:20px}
+.g-blk01 .ttl02 h2 { padding-left:12px; padding-right:12px}
+.g-blk01 .ttl03 { border-top:1px solid #dbdbdb}
+.g-blk01 .ttl h2 i { padding-left:2px; font-size:18px; font-family:Arial}
+.g-blk01 .ttl h2 small { font-size:12px; font-weight:normal}
+.g-blk-nobgimg { background-image:none}
+.g-blk-noborder-btm { border-bottom:0}
+
+/* 侧边栏-学历类型指南-折叠 */
+.c-siderEduGuide-mini { position:relative; width:100%; padding:8px 0}
+.c-siderEduGuide-mini .hd li { float:left; position:relative; cursor:pointer; width:86px; padding:6px 0 4px; text-align:center; background:url(XL_v2_g_line_vr.png) right top repeat-y}
+.c-siderEduGuide-mini .hd li em { display:block; width:28px; height:32px; margin:0 auto; background:url(XL_v2_g_sprite.png) no-repeat}
+.c-siderEduGuide-mini .hd li strong { display:block; overflow:hidden; height:20px; padding-top:4px; font-weight:normal}
+.c-siderEduGuide-mini .hd li.s1 em { background-position:0 -220px}
+.c-siderEduGuide-mini .hd li.s2 em { background-position:-30px -220px}
+.c-siderEduGuide-mini .hd li.s3 { background:#fff}
+.c-siderEduGuide-mini .hd li.s3 em { background-position:-60px -220px}
+.c-siderEduGuide-mini .hd li.selected strong { font-weight:bold}
+.c-siderEduGuide-mini .ctn { display:none; position:absolute; z-index:1; left:0; top:80px; width:100%; height:196px; border-top:1px solid #dbdbdb; border-bottom:1px solid #dbdbdb; background:#f7f7f7}
+.c-siderEduGuide-mini .ctn div { display:none; padding:12px 16px}
+.c-siderEduGuide-mini .ctn div q { position:absolute; z-index:1; top:-11px; overflow:hidden; width:0; height:0; font:normal 0/9999px serif; border-width:0 10px 10px; border-style:dashed dashed solid; border-color:transparent transparent #ccc}
+.c-siderEduGuide-mini .ctn div q.in { z-index:2; top:-10px; border-color:transparent transparent #f7f7f7}
+.c-siderEduGuide-mini .ctn li { overflow:hidden; height:24px; padding-left:10px; line-height:24px; background:url(images/XL_v2_g_icon_01.png) 0 11px no-repeat}
+.c-siderEduGuide-mini .ctn li a { color:#0084d8}
+.c-siderEduGuide-mini .ctn div.s1 q { left:33px}
+.c-siderEduGuide-mini .ctn div.s2 q { left:119px}
+.c-siderEduGuide-mini .ctn div.s3 q { left:205px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

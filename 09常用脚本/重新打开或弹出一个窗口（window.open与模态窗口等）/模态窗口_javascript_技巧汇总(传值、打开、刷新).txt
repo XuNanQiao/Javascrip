@@ -1,0 +1,136 @@
+模态窗口 javascript 技巧汇总（传值、打开、刷新）
+2011-02-17 15:05
+1、要弹出的页面中，一定要保证<head></head>标签间有<base target=“_self”>，否则会弹出的模态窗口上，点击按钮时，会再次弹出一个新页面。
+2、被弹出页面的按钮的事件处理中，应该有Response.Write(new Function().ClosePage());语句，用以关闭当前的模态窗口。
+3、因为幽默的缓存原因，如果你在模态窗口中修改了数据，你会发现，父页面上的数据刷新了，但是当你再点击按钮，重新弹出模态窗口时，你会发现模态窗口中的内容还是上次的内容，经过我试验，手动改了html代码后，点击弹出的模态窗口还是弹出相同的页面，所以，这里要绕开这个机制，方法是在被弹出的aspx页面后加上随机参数。上面模态窗口代码可以改成如下，以避免此问题：
+      public string ModalWindow(string openAspxPage,int width,int height)
+      {
+               string js = string.Format("javascript:window.showModalDialog(\"{0}&rand="+new Random().Next().ToString()+ "\",window,\"status:false;dialogWidth:{1}px;dialogHeight:{2}px\")",openAspxPage,width,height);
+              return js;
+      }
+      注意红字部分参数，是自定义的一个参数，此参数应该是整个项目中唯一的变更名称，并且无意义(最保险的办法是把这个变更命名为lakjsdflawdfqwoifa之类的名称)。
+      基本上，满足了上述条件，做页面时就操作模态窗口，相对就简单了。
+
+//-------------------------------------------------------------------------------------------------------------
+
+模态窗口——有时会让你觉得很好用的一个东西2006-10-20 11:54关于showModalDialog和showModelessDialog的使用，一个b/s结构的项目中用window.open弹出的窗口被一些广告拦截工具给拦截了，没办法就只能用showModalDialog来解决问题，但showModalDialog这个方法不好的就是页面间传值太麻烦(传值有两种方法)，可是实在没其他的办法来解决这个拦截问题，只有用这个了。代码到是两下就写好了，但调试代码的时候发现一个问题，用showModalDialog弹出的窗口中的内容一直是第一次访问页面时显示的内容，开始就怀疑是窗体调用的页面缓存，最后通过单步跟踪调试也证明了问题确实是读取的页面缓存，这说明了在asp.net中用showModalDialog和showModelessDialog做弹出窗体时最好在page_load事件加上 Response.Expires = 0; 
+Response.Cache.SetNoStore(); 
+ Response.AppendHeader("Pragma", "no-cache"); 
+来清除缓存。用asp，php，js，vbscript测试使用showModalDialog方法没有出现需要清除缓存的情况，大家可以放心使用，关于showModalDialog的时候可以参见下面我找到的详细介绍
+
+showModalDialog和showModelessDialog使用心得
+
+一、showModalDialog和showModelessDialog有什么不同？
+　　showModalDialog：被打开后就会始终保持输入焦点。除非对话框被关闭，否则用户无法切换到主窗口。类似alert的运行效果。
+　　showModelessDialog：被打开后，用户可以随机切换输入焦点。对主窗口没有任何影响(最多是被挡住一下而以。:P)
+
+二、怎样才让在showModalDialog和showModelessDialog的超连接不弹出新窗口？
+　　在被打开的网页里加上<base target="_self">就可以了。这句话一般是放在<html>和<body>之间的。
+
+三、怎样才刷新showModalDialog和showModelessDialog里的内容？
+　　在showModalDialog和showModelessDialog里是不能按F5刷新的，又不能弹出菜单。这个只能依靠javascript了，以下是相关代码：
+
+<body onkeydown="if (event.keyCode==116){reload.click()}">
+<a id="reload" href="filename.htm" style="display:none">reload...</a>
+
+　　将filename.htm替换成网页的名字然后将它放到你打开的网页里，按F5就可以刷新了，注意，这个要配合<base target="_self">使用，不然你按下F5会弹出新窗口的。
+
+注意:如果想当访问的时候自动刷新,可以在被打开得页面,设置一个记录变量,当被打开模态窗口得时候,变量至1,然后使用上述方法刷新模态窗口,当关闭窗口得时候,变量至0.
+
+四、如何用javascript关掉showModalDialog(或showModelessDialog)打开的窗口。
+　　<input type="button" value="关闭" onclick="window.close()">
+　　也要配合<base target="_self">，不然会打开一个新的IE窗口，然后再关掉的。
+
+五、showModalDialog和showModelessDialog数据传递技巧。
+　　例子：
+　　　　现在需要在一个showModalDialog(或showModelessDialog)里读取或设置一个变量var_name
+
+　　　　　　一般的传递方式：
+　　　　　　　　window.showModalDialog("filename.htm",var_name)
+　　　　　　　　//传递var_name变量
+　　　　　　在showModalDialog(或showModelessDialog)读取和设置时：
+　　　　　　　　alert(window.dialogArguments)//读取var_name变量
+　　　　　　　　window.dialogArguments="oyiboy"//设置var_name变量
+　　　　这种方式是可以满足的，但是当你想在操作var_name同时再操作第二个变理var_id时呢？就无法再进行操作了。这就是这种传递方式的局限性。
+　　　　
+　　　　　　以下是我建议使用的传递方式：
+　　　　　　　　window.showModalDialog("filename.htm",window)
+　　　　　　　　//不管要操作什么变量，只直传递主窗口的window对象
+　　　　　　在showModalDialog(或showModelessDialog)读取和设置时：
+　　　　　　　　alert(window.dialogArguments.var_name)//读取var_name变量
+　　　　　　　　window.dialogArguments.var_name="oyiboy"//设置var_name变量
+
+　　　　　　　　同时我也可以操作var_id变量
+　　　　　　　　alert(window.dialogArguments.var_id)//读取var_id变量
+　　　　　　　　window.dialogArguments.var_id="001"//设置var_id变量
+
+　　　　　　　　同样还可以对主窗口的任何对象进行操作，如form对象里的元素。
+　　　　　　　　window.dialogArguments.form1.index1.value="这是在设置index1元素的值"
+
+     在弹出窗口中返回值：window.returnValue = ... ;
+
+六、多个showModelessDialog的相互操作。
+
+　　以下代码的主要作用是在一个showModelessDialog里移动别一个showModelessDialog的位置。
+
+　　主文件的部份js代码。
+　　var s1=showModelessDialog('控制.htm',window,"dialogTop:1px;dialogLeft:1px"） //打开控制窗口
+　　var s2=showModelessDialog('about:blank',window,"dialogTop:200px;dialogLeft:300px"）　　//打开被控制窗口
+
+　　控制.htm的部份代码。
+　　<script>
+　　　　//操作位置数据，因为窗口的位置数据是"xxxpx"方式的，所以需要这样的一个特殊操作函数。
+ function countNumber(A_strNumber,A_strWhatdo)
+ {
+  A_strNumber=A_strNumber.replace('px','')
+  A_strNumber-=0
+  switch(A_strWhatdo)
+  {
+  case "-":A_strNumber-=10;break;
+  case "+":A_strNumber+=10;break;
+  }
+  return A_strNumber + "px"
+ }
+　　</script>
+　　<input type="button" onclick="window.dialogArguments.s2.dialogTop=countNumber(window.dialogArguments.s2.dialogTop,'-')" value="上移">
+　　<input type="button" onclick="window.dialogArguments.s2.dialogLeft=countNumber(window.dialogArguments.s2.dialogLeft,'-')" value="左移">
+　　<input type="button" onclick="window.dialogArguments.s2.dialogLeft=countNumber(window.dialogArguments.s2.dialogLeft,'+')" value="右移">
+　　<input type="button" onclick="window.dialogArguments.s2.dialogTop=countNumber(window.dialogArguments.s2.dialogTop,'+')" value="下移">
+
+　　以上关键部份是：
+　　　　窗口命名方式：var s1=showModelessDialog('控制.htm',window,"dialogTop:1px;dialogLeft:1px"）
+　　　　变量访问方式：window.dialogArguments.s2.dialogTop
+
+　　这个例子只是现实showModelessDialog与showModelessDialog之间的位置操作功能，通过这个原理，在showModelessDialog之间相互控制各自的显示页面，传递变量和数据等。这要看各位的发挥了。
+
+ 
+
+====================================================================
+
+window.showModalDialog()方法用来创建一个显示HTML内容的模态对话框。 
+window.showModelessDialog()方法用来创建一个显示HTML内容的非模态对话框。 
+
+使用方法：
+
+vReturnValue = window.showModalDialog(sURL [, vArguments] [,sFeatures]) 
+vReturnValue = window.showModelessDialog(sURL [, vArguments] [,sFeatures]) 
+
+参数说明： 
+sURL--必选参数，类型：字符串。用来指定对话框要显示的文档的URL。 
+vArguments--可选参数，类型：变体。用来向对话框传递参数。传递的参数类型不限，包括数组等。对话框通过window.dialogArguments来取得传递进来的参数。 
+sFeatures-- 可选参数，类型：字符串。用来描述对话框的外观等信息，可以使用以下的一个或几个，用分号“;”隔开。 
+1.dialogHeight :对话框高度，不小于100px，IE4中dialogHeight 和 dialogWidth 默认的单位是em，而IE5以上是px，为方便其见，在定义modal方式的对话框时，用px做单位。 
+2.dialogWidth: 对话框宽度。 
+3.dialogLeft: 离屏幕左的距离。 
+4.dialogTop: 离屏幕上的距离。 
+5.center: {yes | no | 1 | 0 }：窗口是否居中，默认yes，但仍可以指定高度和宽度。 
+6.help: {yes | no | 1 | 0 }：是否显示帮助按钮，默认yes。 
+7.resizable: {yes | no | 1 | 0 } 〔IE5＋〕：是否可被改变大小。默认no。 
+8.status: {yes | no | 1 | 0 } 〔IE5+〕：是否显示状态栏。默认为yes[ Modeless]或no[Modal]。 
+9.scroll:{ yes | no | 1 | 0 | on | off }：指明对话框是否显示滚动条。默认为yes。 
+下面几个属性是用在HTA中的，在一般的网页中一般不使用。 
+10.dialogHide:{ yes | no | 1 | 0 | on | off }：在打印或者打印预览时对话框是否隐藏。默认为no。 
+11.edge:{ sunken | raised }：指明对话框的边框样式。默认为raised。 
+12.unadorned:{ yes | no | 1 | 0 | on | off }：默认为no。
+
+ 

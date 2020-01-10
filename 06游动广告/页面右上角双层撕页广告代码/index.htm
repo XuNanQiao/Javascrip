@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>页面右上角双层撕页广告代码</title>
+
+	<link rel="stylesheet" type="text/css" href="pagepeel.packed.css" />
+	    
+    <script src="jquery.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript" src="pagepeel-jquery.js"></script>
+
+    <style type="text/css">
+        body {
+            padding:1em; margin:0;
+            background: #ccc;
+            color: #333;
+        }
+        
+        .xteam-pagepeel img.peel {
+        	width: 75px;
+        	height: 79px;
+        }
+        
+        
+		.xteam-pagepeel .back {
+			width: 75px;
+			height: 75px;
+		}
+        
+        .xteam-pagepeel .corner {
+        	background-repeat: no-repeat;       	
+        	background-image: url(note-revealed.png);
+        	background-position: top right;
+        }
+        
+        .xteam-pagepeel .peel-hint {
+        	color: #333333;
+        	border: none;
+        	font-family: monospace;
+        	font-size: 2em;
+        }
+        
+        .xteam-pagepeel .peel-content .action {
+        	color: #333333;
+        }
+        
+        .xteam-pagepeel .peel-content .close {
+        	display: none;
+        }
+        
+        .xteam-pagepeel.full .peel-content .close {
+        	display: inherit;
+        }
+        
+    </style>
+</head>
+<body><hr />
+	<div id="pagepeel" class="xteam-pagepeel">
+		<span class="peel">
+			<map name="peelmap">
+				<area shape="poly" coords="0,0,614,0,614,614,0,0" title="Go!" href="javascript:void(0)" class="peel-hotzone" />
+			</map>
+			<img src="page-peel.png" alt="" class="peel" />
+			<span class="back corner"></span>
+			<span class="back link">
+				<img src="trans.gif" alt="" class="map" usemap="#peelmap" />
+				<span class="peel-content">
+					<span class="action" >
+						期待您
+					</span>
+					<form>
+						<button type="button" class="close">关闭</button>
+					</form>
+				</span>
+			</span>
+		</span>
+	</div>
+
+<h1>&nbsp;</h1>
+	<h2>页面右上角双层撕页广告代码</h2>
+	<script type="text/javascript">
+		var peel = new Xteam.Ui.PagePeel('#pagepeel');		
+	</script>
+</body>
+</html>

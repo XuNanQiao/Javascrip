@@ -1,0 +1,25 @@
+@import url("border.css");
+@import url("widget.css");
+
+
+body {
+	font-size:12px;
+	}
+.clear{overflow:hidden;height:1px;clear:both;}
+.h8{height:8px;}
+a{color:#333;}
+a:hover{color:#cc0000;}
+/*=µ×²¿
+TPL_BOTTOM
+=============================================================================================*/
+#Foot{
+	width:960px;
+	margin:0px auto;
+	font-size:12px;
+}
+#FootContent *{
+padding:0px;
+margin:0px;
+line-height:22px;
+}
+#FootContent{text-align:center;color:#333;}

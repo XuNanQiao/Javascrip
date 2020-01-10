@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,{keyword},JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为{title}，属于站长常用代码，更多{keyword}代码请访问懒人图库JS代码频道。" />
+<title>{title}_懒人图库</title>
+</head>
+<body>
+<div style="text-align:center">
+<!-- 代码 开始 -->
+<script language='javascript'> 
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=480;
+var swf_height=240;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+linkarr[1] = "http://www.lanrentuku.com";
+picarr[1]  = "images/01.jpg";
+textarr[1] = " 标题1标题1标题1标题1";
+linkarr[2] = "http://www.lanrentuku.com";
+picarr[2]  = "images/02.jpg";
+textarr[2] = " 标题2标题2标题2标题2";
+linkarr[3] = "http://www.lanrentuku.com";
+picarr[3]  = "images/03.jpg";
+textarr[3] = " 标题3标题3标题3标题3";
+linkarr[4] = "http://www.lanrentuku.com";
+picarr[4]  = "images/04.jpg";
+textarr[4] = " 标题4标题4标题4标题4";
+linkarr[5] = "http://www.lanrentuku.com";
+picarr[5]  = "images/05.jpg";
+textarr[5] = " 标题5标题5标题5标题5";
+
+ 
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'">');
+document.write('<embed src="images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'& menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+</script>
+<!-- 代码 结束 -->
+
+</div>
+</body>
+</html>

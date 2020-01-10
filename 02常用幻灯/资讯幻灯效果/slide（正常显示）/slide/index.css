@@ -1,0 +1,108 @@
+
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #fff; COLOR: #000; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma,"ËÎÌו"; TEXT-ALIGN: center
+}
+.g_r {
+	ZOOM: 1
+}
+.g_r {
+	MARGIN-BOTTOM: 5px
+}
+.g_content {
+	DISPLAY: inline
+}
+.g_content {
+	PADDING-RIGHT: 230px; PADDING-LEFT: 206px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 524px; PADDING-TOP: 0px
+}
+.g_bar {
+	FLOAT: left; MARGIN-LEFT: -100%; WIDTH: 200px
+}
+.jcarousel-clip {
+	Z-INDEX: 2; OVERFLOW: hidden; WIDTH: 100%; POSITION: relative
+}
+
+.jcarousel-next {
+	DISPLAY: none; Z-INDEX: 3; CURSOR: pointer; POSITION: absolute
+}
+.jcarousel-prev {
+	DISPLAY: none; Z-INDEX: 3; CURSOR: pointer; POSITION: absolute
+}
+#focus {
+	WIDTH: 524px; POSITION: relative; HEIGHT: 200px
+}
+#focus .coda-nav-left {
+	DISPLAY: none
+}
+#focus .coda-nav-right {
+	DISPLAY: none
+}
+#focus_content {
+	OVERFLOW: hidden; WIDTH: 524px; POSITION: relative; HEIGHT: 200px
+}
+.coda-slider .panel-container {
+	POSITION: relative
+}
+.coda-slider .panel {
+	DISPLAY: block; FLOAT: left; WIDTH: 525px; HEIGHT: 200px
+}
+#focus_content .panel A {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 524px; HEIGHT: 200px
+}
+#focus .coda-nav {
+	CLEAR: both; Z-INDEX: 13; RIGHT: 4px; BOTTOM: 10px; POSITION: absolute
+}
+#focus .coda-nav UL {
+	CLEAR: both; DISPLAY: block; OVERFLOW: hidden
+}
+#focus .coda-nav LI {
+	BACKGROUND: #fff; FLOAT: left; OVERFLOW: hidden; MARGIN-RIGHT: 6px
+}
+#fashiongallery .jcarousel-container {
+	PADDING-RIGHT: 27px; PADDING-LEFT: 27px; PADDING-BOTTOM: 0px; WIDTH: 427px; PADDING-TOP: 0px
+}
+#fashiongallery .jcarousel-clip {
+	WIDTH: 100%
+}
+#fashiongallery .jcarousel-prev {
+	BACKGROUND: url(1.gif) no-repeat left -10px; LEFT: 0px; WIDTH: 27px; TOP: 30px; HEIGHT: 54px
+}
+#fashiongallery .jcarousel-next {
+	RIGHT: 0px; BACKGROUND: url(1.gif) no-repeat left -10px; WIDTH: 27px; TOP: 30px; HEIGHT: 54px
+}
+#daily .jcarousel-container {
+	WIDTH: 481px
+}
+#daily .jcarousel-prev {
+	RIGHT: 100px; BACKGROUND: url(1.gif) no-repeat left -10px; OVERFLOW: hidden; WIDTH: 13px; TOP: -44px; HEIGHT: 13px
+}
+#daily .jcarousel-prev-disabled {
+	BACKGROUND-POSITION: -59px -204px
+}
+#daily .jcarousel-next {
+	RIGHT: 0px; BACKGROUND: url(1.gif) no-repeat left -10px; OVERFLOW: hidden; WIDTH: 13px; TOP: -44px; HEIGHT: 13px
+}
+#daily .jcarousel-next-disabled {
+	BACKGROUND-POSITION: -72px -204px
+}
+#daily_chose {
+	RIGHT: 37px; POSITION: absolute; TOP: 7px
+}
+#daily_chose .jcarousel-container {
+	WIDTH: 86px
+}
+#dailyscroll .jcarousel-item {
+	WIDTH: 481px; HEIGHT: 218px
+}
+
+#fashiongallery LI {
+	WIDTH: 96px; MARGIN-RIGHT: 14px
+}
+#fashiongallery LI .img {
+	DISPLAY: block; MARGIN-BOTTOM: 6px; OVERFLOW: hidden; WIDTH: 96px; HEIGHT: 96px
+}
+#fashiongallery LI .title {
+	DISPLAY: block; FONT-WEIGHT: 700; OVERFLOW: hidden; HEIGHT: 18px; TEXT-ALIGN: center
+}
+
+
+

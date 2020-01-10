@@ -1,0 +1,199 @@
+在平时编码中,经常要把日期转换成各种各样的形式输出或保持,今天专门做了个测试,发现DateTime的ToString()方法居然有这么多的表现形式,和大家一起分享.
+
+DateTime time=DateTime.Now;   //2010-5-28  11:22:02.4552691 星期五
+
+ 
+
+              time.To("y")                         "2010年5月"
+
+              time.To("yy")                       "10"
+
+              time.To("yyy")                     "2010"
+
+              time.To("yyyy")                    "2010"
+
+              time.To("Y")                        "2010年5月"
+
+              time.To("m")                       "5月28日" 
+              time.To("mm")                     "22"
+
+              time.To("mmm")                  "22"
+
+              time.To("mmmm")               "22"
+
+              time.To("M")                      "5月28日"
+
+              time.To("MM")                   "05"
+
+              time.To("MMM")                "五月"
+
+              time.To("MMMM")             "五月"
+
+              time.To("d")                         "2010-5-28"
+
+              time.To("dd")                       "28"
+
+              time.To("ddd")                     "五"
+
+              time.To("dddd")                   "星期五"
+
+              time.To("D")                        "2010年5月28日"
+
+              time.To("hh")                        "11" 
+              time.To("hhh")                      "11"
+
+              time.To("hhhh")                     "11"
+
+              time.To("HH")                      "11"
+
+              time.To("HHH")                    "11"
+
+              time.To("HHHH")                 "11"
+
+              time.To("s")                         "2010-05-28T11:22:02"
+
+              time.To("ss")                       "02"
+
+              time.To("sss")                      "02"
+
+              time.To("ssss")                    "02"
+
+              time.To("f")                         "2010年5月28日 11:22"
+
+              time.To("ff")                        "45"
+
+              time.To("fff")                       "455"
+
+              time.To("ffff")                      "4552"
+
+              time.To("t")                         "11:22"
+
+              time.To("tt")                        "AM"
+
+              time.To("ttt")                       "AM"
+
+              time.To("tttt")                      "AM"
+
+              time.To("T")                        "11:22:02"
+
+              time.To("zz")                       "+08"
+
+              time.To("zzz")                      "+08:00"
+
+              time.To("zzzz")                    "+08:00"
+
+              time.To("r")                         "Fri, 28 May 2010 11:22:02 GMT"
+
+              time.To("R")                        "Fri, 28 May 2010 11:22:02 GMT"
+
+              time.To("u")                         "2010-05-28 11:22:02Z"
+
+              time.To("U")                        "2010年5月28日 3:11:02"
+
+              time.To("o")                         "2010-05-28T11:22:02.4552691+08:00"
+
+              time.To("O")                        "2010-05-28T11:22:02.4552691+08:00"
+
+              time.To("u")                         "2010-05-28 11:22:02Z"
+
+              time.To("U")                        "2010年5月28日 3:11:02"
+
+              time.To("g")                         "2010-5-28 11:22"
+
+              time.To("gg")                       "公元"
+
+              time.To("ggg")                     "公元"
+
+              time.To("gggg")                   "公元"
+
+              time.To("G")                        "2010-5-28 11:22:02"
+
+能够取出单一的某个部分的字符串可以组合起来使用,如:
+
+time.ToString("gg yyyy/MM/dd hh:mm:ss dddd")              "公元 2010-05-28 11:56:26 星期五"
+
+因为此处gg,yyyy,MM,dd,hh,mm,ss,dddd都只是取出单一的部分.
+
+像下面的组合则不行:
+
+time.ToString("gg y")     "公元 10"   //结果不是我们需要的"公元 2010年5月"
+
+因为y代表的是"2010年5月",不是单一的功能. 
+
+
+
+
+在 ASP.net c# /中
+
+　　我们可以通过使用DataTime这个类来获取当前的时间。通过调用类中的各种方法我们可以获取不同的时间：如：日期（2008-09-04）、时间（12：12：12）、日期+时间（2008-09-04 12：11：10）等。
+
+
+//获取日期+时间
+DateTime.Now.ToString();            // 2008-9-4 20:02:10
+DateTime.Now.ToLocalTime().ToString();        // 2008-9-4 20:12:12
+
+//获取日期
+DateTime.Now.ToLongDateString().ToString();    // 2008年9月4日
+DateTime.Now.ToShortDateString().ToString();    // 2008-9-4
+DateTime.Now.ToString("yyyy-MM-dd");        // 2008-09-04
+DateTime.Now.Date.ToString();            // 2008-9-4 0:00:00
+
+//获取时间
+DateTime.Now.ToLongTimeString().ToString();   // 20:16:16
+DateTime.Now.ToShortTimeString().ToString();   // 20:16
+DateTime.Now.ToString("hh:mm:ss");        // 08:05:57
+DateTime.Now.TimeOfDay.ToString();        // 20:33:50.7187500
+
+//其他
+DateTime.ToFileTime().ToString();       // 128650040212500000
+DateTime.Now.ToFileTimeUtc().ToString();   // 128650040772968750
+DateTime.Now.ToOADate().ToString();       // 39695.8461709606
+DateTime.Now.ToUniversalTime().ToString();   // 2008-9-4 12:19:14
+
+DateTime.Now.Year.ToString();          获取年份   // 2008
+DateTime.Now.Month.ToString();      获取月份   // 9
+DateTime.Now.DayOfWeek.ToString(); 获取星期   // Thursday
+DateTime.Now.DayOfYear.ToString(); 获取第几天   // 248
+DateTime.Now.Hour.ToString();          获取小时   // 20
+DateTime.Now.Minute.ToString();     获取分钟   // 31
+DateTime.Now.Second.ToString();     获取秒数   // 45
+
+//n为一个数,可以数整数,也可以事小数
+dt.AddYears(n).ToString();   //时间加n年
+dt.AddDays(n).ToString();   //加n天
+dt.AddHours(n).ToString();   //加n小时
+dt.AddMonths(n).ToString();   //加n个月
+dt.AddSeconds(n).ToString();   //加n秒
+dt.AddMinutes(n).ToString();   //加n分
+
+
+SQL语句使用时间和日期的函数
+
+
+getdate():获取系统当前时间
+dateadd(datepart,number,date):计算在一个时间的基础上增加一个时间后的新时间值,比如：dateadd(yy,30,getdate())
+datediff(datepart,startdate,enddate):计算两个时间的差值,比如：datediff(yy,getdate(),'2008-08-08')
+dataname(datepart,date):获取时间不同部分的值，返回值为字符串
+datepart(datepart,date):和datename相似，只是返回值为整型
+day(date):获取指定时间的天数
+month(date):获取指定时间的月份
+year(date):获取指定时间的年份
+
+select year(getdate())  ：当前年份
+
+SQL在读取的时候转换时间格式的问题
+
+
+
+时间是 DateTime 类型的  现在在一些地方我要只显示年/月/日 把后面的具体几点几分 把现实  这个转换怎么写
+
+<%# Eval("NTime")%>     这种情况下怎么转换
+
+绑在GridView里边的  <asp:BoundField DataField="NTime" HeaderText="时间"   ReadOnly="True" />   这种情况下怎么转换
+
+这两个地方我都要转化成 只显示年/月/日  怎么写<%#Convert.ToDateTime(Eval("NTime")).toString("YYYY/MM/dd")%>      --只要Ntime能转成时间格式即可。
+ <asp:BoundField DataField="NTime" HeaderText="时间" ReadOnly="True" 
+                                DataFormatString="{0:yyyy\/MM\/dd}" />              --这里的 “Ntime”列的类型必须为时间类型，否则转换不了
+
+以上两种，转换过来的格式都为：年/月/日 .<asp:BoundField DataField="NTime" HeaderText="时间"   ReadOnly="True" DataFormatString="{0:yyyy-MM-dd}" /> <%# Eval("NTime")%>:
+<%# Eval(Container.DataItem, "NTime","{0:d}")%> 

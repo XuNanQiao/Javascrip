@@ -1,0 +1,6 @@
+在样式表showing.css中
+
+
+修改上面图片宽度和高度：#topstory	#featured
+
+修改下面的图片：高度和宽度可以直接修改图片  框的宽度#thumbs	

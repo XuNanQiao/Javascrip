@@ -1,0 +1,19 @@
+/// <summary>
+    /// 打开新页面并传参数
+    /// </summary>
+    /// <param name="page">页面</param>
+    /// <param name="NewPageUrl">跳转的页面路径</param>
+    /// <param name="Param">传递的参数</param>
+    /// <param name="Title">标题</param>
+    /// <param name="Height">打开窗体的高度</param>
+    /// <param name="Width">打开新窗体的宽度</param>
+    /// <param name="Left">打开新窗体距离左边的长度</param>
+    /// <param name="Top">打开窗体距离上边的长度</param>
+    public static void OpenNewPage(System.Web.UI.Page page, string NewPageUrl, string Param, string Title, string Height, string Width, string Top, string Left)
+    {
+        string StrScript;
+        StrScript = ("<script language=javascript>");
+        StrScript += ("open('" + NewPageUrl + Param + "','" + Title + "', 'height=" + Height + ",width=" + Width + ",top=" + Top + ",left=" + Left + ",resizable=no,status=yes,toolbar=no,menubar=no,location=no ')");
+        StrScript += ("</script>");
+        page.ClientScript.RegisterClientScriptBlock(page.GetType(), "OK", StrScript);
+    }

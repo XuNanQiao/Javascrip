@@ -1,0 +1,1 @@
+<asp:TextBox D="txtbirthday" runat="server" Width="180px" onfocus="calendar()"></asp:TextBox>

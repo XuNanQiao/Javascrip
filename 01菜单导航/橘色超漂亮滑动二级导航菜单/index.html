@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,菜单导航,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为橘色超漂亮滑动二级导航菜单，属于站长常用代码，更多菜单导航代码请访问懒人图库JS代码频道。" />
+<title>橘色超漂亮滑动二级导航菜单_懒人图库</title>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body><br /><br />
+<script language="javascript">
+	function qiehuan(num){
+		for(var id = 0;id<=9;id++)
+		{
+			if(id==num)
+			{
+				document.getElementById("qh_con"+id).style.display="block";
+				document.getElementById("mynav"+id).className="nav_on";
+			}
+			else
+			{
+				document.getElementById("qh_con"+id).style.display="none";
+				document.getElementById("mynav"+id).className="";
+			}
+		}
+	}
+</script> 
+<div id=menu_out>
+<div id=menu_in>
+<div id=menu>
+<UL id=nav>
+<LI><A class=nav_on id=mynav0 onmouseover=javascript:qiehuan(0) href="http://www.lanrentuku.com/"><SPAN>首 页</SPAN></A></LI>
+
+<LI class="menu_line"></LI><li><a href="http://www.lanrentuku.com/" onmouseover="javascript:qiehuan(1)" id="mynav1" class="nav_off"><span>懒人图库</span></a></li>
+<li class="menu_line"></li><li><a href="#" onmouseover="javascript:qiehuan(2)" id="mynav2" class="nav_off"><span>JS代码</span></a></li>
+<li class="menu_line"></li><li><a href="#" onmouseover="javascript:qiehuan(3)" id="mynav3" class="nav_off"><span>PNG图标</span></a></li>
+<li class="menu_line"></li>
+<li><a href="#" onmouseover="javascript:qiehuan(4)" id="mynav4" class="nav_off"><span>技术文档</span></a></li>
+<li class="menu_line"></li>
+<li><a href="#" onmouseover="javascript:qiehuan(5)" id="mynav5" class="nav_off"><span>广告达人</span></a></li>
+<li class="menu_line"></li><li><a href="#" onmouseover="javascript:qiehuan(6)" id="mynav6" class="nav_off"><span>网页素材</span></a></li>
+<li class="menu_line"></li><li><a href="#" onmouseover="javascript:qiehuan(7)" id="mynav7" class="nav_off"><span>设计欣赏</span></a></li><li class="menu_line"></li> 
+<LI><A class=nav_off id=mynav8 onmouseover=javascript:qiehuan(8) href="#"><SPAN>矢量素材</SPAN></A></LI>
+<LI class=menu_line></LI>
+<LI><A class=nav_off id=mynav9 onmouseover=javascript:qiehuan(9) href="#" target=_blank><SPAN>懒人论坛</SPAN></A></LI>
+<LI class=menu_line></LI>
+</UL>
+<div id=menu_con><div id=qh_con0 style="DISPLAY: block"><UL>
+  <LI><a href="http://www.lanrentuku.com/"><span>栏目名称1</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称2</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称3</SPAN></A></LI>
+</UL></div> 
+<div id=qh_con1 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称4</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称5</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称6</SPAN></A></LI>
+</UL></div> 
+<div id=qh_con2 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称7</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称8</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称9</SPAN></A></LI>
+</UL></div> 
+<div id=qh_con3 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称10</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称11</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称12</SPAN></A></LI>
+</UL></div> 
+<div id=qh_con4 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称13</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称14</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称15</SPAN></A></LI>
+</UL></div>
+<div id=qh_con5 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称16</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称17</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称18</SPAN></A></LI>
+</UL></div>
+<div id=qh_con6 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称19</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称20</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称21</SPAN></A></LI>
+</UL></div>
+<div id=qh_con7 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称22</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称23</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称24</SPAN></A></LI>
+</UL></div>
+<div id=qh_con8 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称25</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称26</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称27</SPAN></A></LI>
+</UL></div>
+<div id=qh_con9 style="DISPLAY: none"><UL>
+  <LI><a href="#"><span>栏目名称28</span></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称29</SPAN></A></LI><LI class=menu_line2></LI>
+  <LI><A href="#"><SPAN>栏目名称30</SPAN></A></LI>
+</UL></div>
+
+</div></div></div></div> 
+
+<br /><br />
+<p align="center">代码整理：<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a>　 出处：<a href="http://www.websjy.com" target="_blank">设计源</a> </p>
+<p align="center">＊尊重他人劳动成果，转载请自觉注明出处！注：此代码仅供学习交流，请勿用于商业用途。</p>
+<p align="center"></p>
+<div align="center"><p>使用方法：</p>
+<p>修改&nbsp;for(var id = 0;id&lt;=9;id++)数字9，可修改一级导航数量。</p>
+<p>&nbsp;</p></div>
+<p align="center"></p>
+</body>
+</html>

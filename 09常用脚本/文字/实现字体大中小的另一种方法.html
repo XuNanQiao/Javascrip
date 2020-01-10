@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>实现字体大中小的另一种方法-懒人图库</title>
+<style type="text/css">
+<!--
+body {font-size:14px}
+-->
+</style>
+<SCRIPT type=text/javascript>
+function $(xixi) {
+return document.getElementById(xixi);
+}
+//转换字号
+function doZoom(size){
+	if(size==12){
+		$("contentText").style.fontSize = size + "px";
+		$("fs12").style.display = "";
+		$("fs14").style.display = "none";
+		$("fs16").style.display = "none";
+	}
+	if(size==14){
+		$("contentText").style.fontSize = size + "px";
+		$("fs12").style.display = "none";
+		$("fs14").style.display = "";
+		$("fs16").style.display = "none";
+	}
+	if(size==16){
+		$("contentText").style.fontSize = size + "px";
+		$("fs12").style.display = "none";
+		$("fs14").style.display = "none";
+		$("fs16").style.display = "";
+	}
+}
+</SCRIPT>
+
+</head>
+
+<body>
+
+<DIV class=fontSize id=fs12 style="DISPLAY: none"><A 
+href="javascript:doZoom(16)">大</A> <A 
+href="javascript:doZoom(14)">中</A> <SPAN>小</SPAN></DIV>
+<DIV class=fontSize id=fs14><A 
+href="javascript:doZoom(16)">大</A> <SPAN>中</SPAN> <A 
+href="javascript:doZoom(12)">小</A></DIV>
+<DIV class=fontSize id=fs16 style="DISPLAY: none"><SPAN>大</SPAN> <A 
+href="javascript:doZoom(14)">中</A> <A 
+href="javascript:doZoom(12)">小</A></DIV>
+
+<br /><br />
+
+<DIV id=contentText>懒人图库 学会偷懒，并懒出境界是提高工作效率最有效的方法！</DIV>
+
+<p>说明：此方法有别于之前发布的<a href="http://www.lanrentuku.com/js/text-239.html" target="_blank">字号缩放代码</a>，点击链接后，当前字号则不显示链接。</p>
+<p>整理：懒人西西</p>
+<p>查找更多代码，请访问：<a href="http://www.lanrentuku.com" target="_blank">懒人图库</a></p>
+</body>
+</html>

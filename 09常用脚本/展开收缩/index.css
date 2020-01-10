@@ -1,0 +1,11 @@
+﻿/*------全局定位------*/
+body{ margin:0px;}
+div{margin:0px:padding:0px;}
+ul{margin:0px;padding:0px;}
+li{margin:0px;padding:0px;list-style-type:none;}
+.clear{clear:both;}
+.sl_slrmzy{float:left;width:470px;border:#FFE5B4 1px solid;background:#FFFCE9;height:auto;overflow:hidden;}
+.sl_slrmzyspan1{float:left;font-size:12px;padding-top:3px;font-weight:bold;margin-left:5px;margin-top:4px;width:70px;height:20px; color:#FE0020;}
+.sl_slrmzyspan2{float:left;font-size:12px;margin-top:5px;width:360px;height:auto;line-height:180%;color:#555555;}
+.sl_slrmzy .fold{float:right;background: url(icon_fold.gif) no-repeat scroll left top transparent;cursor:pointer;display:block;width:11px;height:11px;margin-top:8px;margin-right:5px;}
+.sl_slrmzy .unfold{float:right;background:url(icon_unfold.gif) no-repeat scroll left top transparent;cursor:pointer;display:block;width:11px;height:11px;margin-top:8px;margin-right:5px;}

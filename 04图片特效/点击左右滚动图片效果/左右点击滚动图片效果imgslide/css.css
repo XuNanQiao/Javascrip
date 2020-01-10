@@ -1,0 +1,58 @@
+/* CSS Document */
+BODY {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 26px 0px 0px 87px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: ËÎÌו; BACKGROUND-COLOR: #fff; BORDER-RIGHT-WIDTH: 0px
+}
+.img {
+	BORDER-RIGHT: #395c00 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #395c00 1px solid; DISPLAY: inline; PADDING-LEFT: 1px; BACKGROUND: #fff; FLOAT: right; PADDING-BOTTOM: 1px; BORDER-LEFT: #395c00 1px solid; WIDTH: 175px; PADDING-TOP: 1px; BORDER-BOTTOM: #395c00 1px solid; HEIGHT: 140px
+}
+.blk_18 {
+	MARGIN-TOP: 0px; FONT-SIZE: 12px; OVERFLOW: hidden; WIDTH: 869px; ZOOM: 1; HEIGHT: 181px
+}
+.blk_18 .pcont {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 782px
+}
+.blk_18 .ScrCont {
+	WIDTH: 32766px; ZOOM: 1
+}
+.blk_18 #List1_1 {
+	FLOAT: left
+}
+.blk_18 #List2_1 {
+	FLOAT: left
+}
+.blk_18 .LeftBotton {
+	BACKGROUND: url(http://www.qzwb.com/trip/image/00219b66746a0d02f9dd19.gif) no-repeat; FLOAT: left; MARGIN: 10px 5px; WIDTH: 32px; HEIGHT: 130px
+}
+.blk_18 .RightBotton {
+	BACKGROUND: url(http://www.qzwb.com/trip/image/00219b66746a0d02f9dd19.gif) no-repeat; FLOAT: right; MARGIN: 10px 1px; WIDTH: 31px; HEIGHT: 130px
+}
+.blk_18 .LeftBotton {
+	BACKGROUND-POSITION: 0% -40%; MARGIN-LEFT: 5px
+}
+.blk_18 .RightBotton {
+	BACKGROUND-POSITION: 0% 108%; MARGIN-LEFT: -1px
+}
+.blk_18 .pl IMG {
+	DISPLAY: block; MARGIN: 6px auto 1px; CURSOR: pointer; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.blk_18 .pl {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; FLOAT: left; BORDER-LEFT: #ffffff 1px solid; WIDTH: 114px; LINE-HEIGHT: 24px; BORDER-BOTTOM: #ffffff 1px solid; TEXT-ALIGN: center; TEXT-DECORATION: underline
+}
+.blk_18 A.pl:hover {
+	BORDER-RIGHT: #ff9900 1px solid; BORDER-TOP: #ff9900 1px solid; BACKGROUND: #fff; BORDER-LEFT: #ff9900 1px solid; COLOR: #ff9900; BORDER-BOTTOM: #ff9900 1px solid
+}
+.commu_cont3 {
+	MARGIN: 9px 7px 7px; LINE-HEIGHT: 150%
+}
+.commu_cont3 UL {
+	WIDTH: 188px
+}
+.word2 {
+	FONT-SIZE: 9pt; COLOR: #000000; TEXT-DECORATION: none
+}
+.word2:hover {
+	TEXT-DECORATION: underline
+}
+#Layer1 {
+	Z-INDEX: 1; LEFT: 51px; WIDTH: 65px; POSITION: absolute; TOP: 185px; HEIGHT: 20px
+}

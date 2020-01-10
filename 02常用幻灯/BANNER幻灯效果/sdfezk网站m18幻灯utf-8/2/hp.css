@@ -1,0 +1,729 @@
+.slides {
+	OVERFLOW: hidden; WIDTH: 704px; POSITION: relative; HEIGHT: 340px
+}
+.slide-pic {
+	OVERFLOW: hidden; WIDTH: 703px
+}
+.slide-pic IMG {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; WIDTH: 701px; BORDER-BOTTOM: #e4e4e4 1px solid; HEIGHT: 338px
+}
+.slide-pic LI {
+	DISPLAY: none
+}
+.slide-pic LI.cur {
+	DISPLAY: block
+}
+.slide-li {
+	LEFT: 0px; BOTTOM: 0px; POSITION: absolute
+}
+.slide-li LI {
+	FLOAT: left; WIDTH: 175px; LINE-HEIGHT: 30px; MARGIN-RIGHT: 1px; HEIGHT: 30px; TEXT-ALIGN: center
+}
+.slide-li A {
+	DISPLAY: block; FONT-SIZE: 14px; WIDTH: 174px; COLOR: #fff; HEIGHT: 30px
+}
+.slide-li .cur A {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.slide-li A:hover {
+	COLOR: #333; TEXT-DECORATION: none
+}
+.op LI {
+	BACKGROUND: #666; FILTER: alpha(opacity=60); opacity: 0.6
+}
+.op LI.cur {
+	BACKGROUND: #fff
+}
+.slide-txt SPAN {
+	DISPLAY: none
+}
+.h3 {
+	FONT: 14px/30px "Microsoft YaHei"; COLOR: #6b3d39
+}
+.h3 .h3 {
+	FLOAT: left
+}
+.h5 {
+	PADDING-LEFT: 1em; BACKGROUND: #e4e4e4; MARGIN: 5px
+}
+.h5 {
+	FONT: 14px/22px "Microsoft YaHei"; COLOR: #6b3d39; HEIGHT: 22px
+}
+.h6 {
+	FONT: 14px/22px "Microsoft YaHei"; COLOR: #6b3d39; HEIGHT: 22px
+}
+.h6 {
+	MARGIN: 5px 0px
+}
+.side .h5 {
+	MARGIN: 0px 0px -5px
+}
+.main {
+	FLOAT: left; WIDTH: 704px
+}
+.side {
+	FLOAT: right; WIDTH: 240px
+}
+.mag {
+	CLEAR: both; OVERFLOW: hidden; HEIGHT: 140px; TEXT-ALIGN: center
+}
+.mag A {
+	MARGIN-LEFT: 1px
+}
+.topad {
+	MARGIN: 5px 0px
+}
+.topad1 {
+	MARGIN-TOP: 10px
+}
+.topad IMG {
+	BORDER-RIGHT: #efefef 1px solid; BORDER-TOP: #efefef 1px solid; BORDER-LEFT: #efefef 1px solid; BORDER-BOTTOM: #efefef 1px solid
+}
+.topad1 IMG {
+	BORDER-RIGHT: #efefef 1px solid; BORDER-TOP: #efefef 1px solid; BORDER-LEFT: #efefef 1px solid; BORDER-BOTTOM: #efefef 1px solid
+}
+.pr-s {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 6px; PADDING-LEFT: 0px; BACKGROUND: #f2f2f2; PADDING-BOTTOM: 5px; COLOR: #666; PADDING-TOP: 5px
+}
+.pr-s UL {
+	MARGIN: 0px auto; WIDTH: 191px
+}
+.pr-s UL LI {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: 3px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.pr-s UL LI A {
+	DISPLAY: block; OVERFLOW: hidden; TEXT-INDENT: -9em; HEIGHT: 43px
+}
+.pr-s UL LI A.brand-a1 {
+	BACKGROUND: url(http://img.m18.com/web/i/hp/euromoda.jpg) no-repeat 0px 0px
+}
+.pr-s UL LI A.brand-a2 {
+	BACKGROUND: url(http://img.m18.com/web/i/hp/rampage.jpg) no-repeat 0px 0px
+}
+.pr-s H2 {
+	FONT-WEIGHT: 600; MARGIN: 0px 8px 4px 0px
+}
+.pr-s P {
+	LINE-HEIGHT: 24px
+}
+.pr-s A.more {
+	MARGIN-TOP: 6px; FLOAT: right; COLOR: #b0202a; MARGIN-RIGHT: 8px; TEXT-DECORATION: underline
+}
+.item {
+	PADDING-LEFT: 5px
+}
+.item LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 8px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.item A {
+	DISPLAY: block
+}
+.item IMG {
+	DISPLAY: block; MARGIN-BOTTOM: 5px
+}
+.banner1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; HEIGHT: 250px
+}
+.banner1 DIV {
+	FLOAT: left
+}
+.banner1 IMG {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.price {
+	DISPLAY: block; FONT-SIZE: 12px; COLOR: #f82453
+}
+.affiche {
+	FLOAT: left
+}
+.affiche {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.subscribe {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.comment {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.investigate {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN-TOP: 10px; MARGIN-BOTTOM: 10px; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.affiche {
+	WIDTH: 220px
+}
+.affiche UL {
+	MARGIN-LEFT: 10px
+}
+.affiche LI {
+	LIST-STYLE-POSITION: inside; LINE-HEIGHT: 30px; LIST-STYLE-TYPE: disc
+}
+.subscribe {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://img.m18.com/web/i/hp/subscribebg.jpg) no-repeat 100% 0px; PADDING-BOTTOM: 5px; WIDTH: 494px; PADDING-TOP: 5px
+}
+.subscribe .fl {
+	BORDER-RIGHT: #e8e8e8 1px solid; PADDING-LEFT: 1em; WIDTH: 220px; LINE-HEIGHT: 22px; MARGIN-RIGHT: 10px
+}
+.subscribe A.sbt {
+	DISPLAY: inline-block; MARGIN-LEFT: 5px; TEXT-DECORATION: none
+}
+.subscribe INPUT {
+	MARGIN: 3px 0px 0px
+}
+.subscribe .sbt {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; BACKGROUND: url(http://img.m18.com/web//i/hp/bg-sbt2.jpg) no-repeat 0px 0px; WIDTH: 45px; CURSOR: pointer; COLOR: #ac3f57; BORDER-TOP-STYLE: none; LINE-HEIGHT: 23px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 23px; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+.subscribe .email {
+	WIDTH: 150px
+}
+.subscribe .address {
+	WIDTH: 150px
+}
+.subscribe .name {
+	WIDTH: 110px
+}
+.subscribe .pcode {
+	WIDTH: 110px
+}
+.get-cat {
+	PADDING-RIGHT: 99px
+}
+.comment {
+	WIDTH: 494px
+}
+.affiche .h5 A {
+	FONT-SIZE: 12px; FLOAT: right; MARGIN-RIGHT: 15px; FONT-FAMILY: Verdana, Geneva, sans-serif
+}
+.comment .h5 A {
+	FONT-SIZE: 12px; FLOAT: right; MARGIN-RIGHT: 15px; FONT-FAMILY: Verdana, Geneva, sans-serif
+}
+.side .h5 A {
+	FONT-SIZE: 12px; FLOAT: right; MARGIN-RIGHT: 15px; FONT-FAMILY: Verdana, Geneva, sans-serif
+}
+.h3 .more {
+	FONT-SIZE: 12px; FLOAT: right; MARGIN-RIGHT: 15px; FONT-FAMILY: Verdana, Geneva, sans-serif
+}
+.comment UL {
+	MARGIN: 0px 10px; OVERFLOW: hidden; ZOOM: 1
+}
+.comment LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; BACKGROUND: url(http://img.m18.com/web/i/comm/ico2.gif) no-repeat 2px 50%; PADDING-BOTTOM: 4px; OVERFLOW: hidden; PADDING-TOP: 4px
+}
+.comment DIV P {
+	FLOAT: left
+}
+.comment UL DIV {
+	TEXT-ALIGN: right
+}
+.comment-con {
+	FLOAT: right; WIDTH: 260px
+}
+.get-cat P {
+	LINE-HEIGHT: 24px; PADDING-TOP: 4px
+}
+.news-con {
+	FLOAT: left; WIDTH: 230px
+}
+.investigate {
+	FLOAT: right; WIDTH: 220px
+}
+.investigate UL {
+	MARGIN: 0px 1em
+}
+.investigate P {
+	MARGIN: 0px 1em
+}
+.investigate LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; COLOR: #666; PADDING-TOP: 1px
+}
+.investigate UL {
+	PADDING-TOP: 2px
+}
+.investigate INPUT {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 0px
+}
+.investigate .btn-invest {
+	DISPLAY: block; BACKGROUND: url(http://img.m18.com/web/i/hp/btn-invest.jpg) no-repeat 0px 0px; MARGIN: 6px auto; WIDTH: 65px; CURSOR: pointer; COLOR: #fff; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 21px; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+.invest-suc {
+	BORDER-RIGHT: #e591a3 1px solid; BORDER-TOP: #e591a3 1px solid; DISPLAY: none; BACKGROUND: url(http://img.m18.com/web/i/hp/tick.gif) #fff4f7 no-repeat 4px 4px; MARGIN: 5px 1em; BORDER-LEFT: #e591a3 1px solid; COLOR: #a71f24; TEXT-INDENT: 2em; LINE-HEIGHT: 21px; BORDER-BOTTOM: #e591a3 1px solid; HEIGHT: 21px
+}
+.newgoods UL {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.newgoods LI {
+	BORDER-TOP: #ccc 1px dotted; FLOAT: left; WIDTH: 100%
+}
+.newgoods LI A {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.newgoods LI A:hover {
+	TEXT-DECORATION: none
+}
+.newgoods LI SPAN {
+	DISPLAY: block; MARGIN-LEFT: 115px
+}
+.newgoods LI IMG {
+	FLOAT: left
+}
+.newgoods .title {
+	MARGIN-TOP: 30px
+}
+.hot {
+	PADDING-LEFT: 5px; FLOAT: left; WIDTH: 195px
+}
+.hot UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 10px
+}
+.hot LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; BACKGROUND: url(../../i/hp/ico-arrow.gif) no-repeat 0px 7px; PADDING-BOTTOM: 5px; PADDING-TOP: 0px
+}
+.hotbox {
+	FLOAT: right; WIDTH: 742px
+}
+.hotbox LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 14px; PADDING-BOTTOM: 15px; PADDING-TOP: 0px
+}
+.banner {
+	MARGIN: 5px 0px 15px
+}
+.opic {
+	DISPLAY: inline; FLOAT: left; MARGIN: 0px 0px 5px 5px
+}
+.mainbox3 .fl {
+	WIDTH: 466px
+}
+.mainbox3 .dbox {
+	WIDTH: 482px
+}
+.item1 {
+	FLOAT: right; OVERFLOW: hidden; WIDTH: 250px
+}
+.dbox .item1 {
+	WIDTH: 270px
+}
+.item1 LI {
+	MARGIN-BOTTOM: -1px; PADDING-BOTTOM: 10px; BORDER-BOTTOM: #e4e4e4 1px solid; HEIGHT: 100px
+}
+.item1 A {
+	DISPLAY: block; OVERFLOW: hidden; ZOOM: 1
+}
+.item1 IMG {
+	FLOAT: left; VERTICAL-ALIGN: top; WIDTH: 100px; HEIGHT: 100px
+}
+.item1 SPAN {
+	DISPLAY: block; MARGIN-LEFT: 120px; PADDING-TOP: 5px
+}
+H3 {
+	DISPLAY: inline; BACKGROUND: url(../../i/hp/navcata.gif) no-repeat 0px 0px; FLOAT: left; MARGIN-LEFT: 10px; OVERFLOW: hidden; WIDTH: 180px; COLOR: #6c1a3d; TEXT-INDENT: -9em; MARGIN-RIGHT: 10px; HEIGHT: 41px
+}
+H3 A {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 100%; TEXT-INDENT: -9em; HEIGHT: 100%
+}
+H3 SPAN {
+	FLOAT: left
+}
+H3.sub2 {
+	BACKGROUND-POSITION: 0px -50px
+}
+H3.sub3 {
+	BACKGROUND-POSITION: 0px -104px; WIDTH: 186px; HEIGHT: 55px
+}
+H3.sub4 {
+	BACKGROUND-POSITION: 0px -162px; WIDTH: 186px; HEIGHT: 55px
+}
+H3.sub5 {
+	BACKGROUND-POSITION: 0px -221px; WIDTH: 186px; HEIGHT: 55px
+}
+H3.sub6 {
+	BACKGROUND-POSITION: 0px -282px; WIDTH: 186px; HEIGHT: 55px
+}
+H3.sub7 {
+	BACKGROUND-POSITION: 0px -350px; WIDTH: 185px; HEIGHT: 52px
+}
+H3.sub8 {
+	BACKGROUND-POSITION: 0px -404px; WIDTH: 90px; HEIGHT: 52px
+}
+H3.sub9 {
+	BACKGROUND: url(../../i/hp/navcata-men.gif) no-repeat 0px 0px; WIDTH: 186px; HEIGHT: 55px
+}
+.catagroy {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; BACKGROUND: #f4efe8; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 183px; PADDING-TOP: 0px; HEIGHT: 18px
+}
+A.hc {
+	COLOR: #957d5b; MARGIN-RIGHT: 10px
+}
+.catagroy DT {
+	DISPLAY: inline; FLOAT: left; COLOR: #957d5b
+}
+.catagroy DD {
+	DISPLAY: inline; FLOAT: left; COLOR: #957d5b
+}
+.catagroy DD {
+	MARGIN-RIGHT: 5px; WHITE-SPACE: nowrap
+}
+.catagroy DD A {
+	MARGIN-TOP: 0px; COLOR: #957d5b; TEXT-DECORATION: none
+}
+.catagroy DD A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.sd {
+	
+}
+A.morelink {
+	FONT-SIZE: 12px; COLOR: #e61c4c
+}
+H3 A:hover {
+	TEXT-DECORATION: none
+}
+H3 A SPAN {
+	PADDING-RIGHT: 18px; DISPLAY: block; BACKGROUND: url(../../i/hp/hp-n2.gif) no-repeat right bottom
+}
+.mainbox {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN-TOP: 5px; OVERFLOW: hidden; BORDER-LEFT: #e4e4e4 1px solid; BORDER-BOTTOM: #e4e4e4 1px solid; HEIGHT: 263px
+}
+.dbox {
+	BORDER-RIGHT: #e4e4e4 1px solid; WIDTH: 475px
+}
+.fl .item LI {
+	PADDING-RIGHT: 5px; PADDING-BOTTOM: 5px
+}
+.top100 {
+	FLOAT: right; MARGIN: -32px 5px 0px 0px
+}
+.mainboxc {
+	BORDER-RIGHT: #e4e4e4 1px solid; BORDER-TOP: #e4e4e4 1px solid; MARGIN: 10px 0px 15px; BORDER-LEFT: #e4e4e4 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #e4e4e4 1px solid
+}
+.itemm LI {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mainbox .item LI {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.mainbox .item A {
+	WIDTH: 125px
+}
+.mainbox .title {
+	TEXT-ALIGN: center
+}
+.mainbox .price {
+	TEXT-ALIGN: center
+}
+.mainbox LI {
+	TEXT-ALIGN: center
+}
+.hotbox .title {
+	TEXT-ALIGN: center
+}
+.hotbox .price {
+	TEXT-ALIGN: center
+}
+.hotbox LI {
+	TEXT-ALIGN: center
+}
+.itemm .title {
+	TEXT-ALIGN: center
+}
+.itemm .price {
+	TEXT-ALIGN: center
+}
+.itemm LI {
+	TEXT-ALIGN: center
+}
+#newwrap IMG {
+	WIDTH: 120px; HEIGHT: 155px
+}
+.clboth {
+	CLEAR: both
+}
+.mtalt {
+	MARGIN-TOP: -25px
+}
+.pleft {
+	WIDTH: 265px
+}
+.pleft2 {
+	WIDTH: 300px
+}
+.mb20 {
+	MARGIN-BOTTOM: 20px
+}
+.mt15 {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 15px; PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; WHITE-SPACE: nowrap
+}
+.ex-banner {
+	PADDING-RIGHT: 10px; DISPLAY: none; MARGIN: 10px auto; WIDTH: 940px; POSITION: relative; HEIGHT: 308px
+}
+.ex-banner P {
+	FONT-WEIGHT: 600; FONT-SIZE: 22px; Z-INDEX: 5; LEFT: 0px; MARGIN-LEFT: 250px; WIDTH: 460px; COLOR: #efde00; FONT-FAMILY: "SimHei"; POSITION: absolute; TOP: 20px; TEXT-ALIGN: center
+}
+.ex-banner P SPAN {
+	FONT-SIZE: 28px
+}
+.ex-banner A.close {
+	Z-INDEX: 5; BACKGROUND: url(http://img.m18.com/web/i/hp/close-off.jpg) no-repeat 0px 0px; LEFT: 870px; FLOAT: right; OVERFLOW: hidden; WIDTH: 59px; TEXT-INDENT: -99em; POSITION: absolute; TOP: 5px; HEIGHT: 19px
+}
+.ex-banner A.close:hover {
+	BACKGROUND: url(http://img.m18.com/web/i/hp/close-on.jpg) no-repeat 0px 0px
+}
+.catalog {
+	MARGIN-TOP: 4px; PADDING-LEFT: 1px; OVERFLOW: hidden; WIDTH: 238px; POSITION: relative; HEIGHT: 164px
+}
+.catalog .h5 {
+	MARGIN-LEFT: -1px
+}
+.catalog .imgbox {
+	MARGIN-TOP: 7px; WIDTH: 476px
+}
+.catalog .imgbox LI {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 0px; OVERFLOW: hidden; WIDTH: 111px; PADDING-TOP: 0px
+}
+.catalog .arrow {
+	DISPLAY: inline; RIGHT: 0px; WIDTH: 90px; POSITION: absolute; TOP: 1px; HEIGHT: 19px
+}
+.catalog .arrow LI {
+	FLOAT: left
+}
+.catalog .arrow A.left {
+	DISPLAY: block; BACKGROUND: url(../../i/hp/ca-arrow2.gif) no-repeat 0px 0px; OVERFLOW: hidden; WIDTH: 30px; TEXT-INDENT: -99em; LINE-HEIGHT: 15px; HEIGHT: 19px
+}
+.catalog .arrow A.right {
+	DISPLAY: block; BACKGROUND: url(../../i/hp/ca-arrow2.gif) no-repeat 0px 0px; OVERFLOW: hidden; WIDTH: 30px; TEXT-INDENT: -99em; LINE-HEIGHT: 15px; HEIGHT: 19px
+}
+.catalog .arrow A.left {
+	WIDTH: 50px
+}
+.catalog .arrow A.left {
+	BACKGROUND-POSITION: -76px 0px
+}
+.catalog .arrow A.right {
+	BACKGROUND-POSITION: -131px 0px; MARGIN-LEFT: 8px
+}
+.catalog .arrow A.left:hover {
+	BACKGROUND-POSITION: 0px 0px
+}
+.catalog .arrow A.right:hover {
+	BACKGROUND-POSITION: -55px 0px
+}
+.m4 {
+	MARGIN: 4px auto
+}
+#spbimg {
+	DISPLAY: none; RIGHT: -1px; WIDTH: 500px; POSITION: absolute; TOP: -23px; HEIGHT: 340px
+}
+.rbox {
+	WIDTH: 455px
+}
+.hp-brand {
+	MARGIN-TOP: 5px
+}
+.hp-brand H5 {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; BACKGROUND: #f4efe8; MARGIN: 1px 1px 0px; TEXT-INDENT: 1em; LINE-HEIGHT: 22px
+}
+.hp-brand DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; MARGIN: 0px 8px; PADDING-TOP: 2px
+}
+.hp-brand DT {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #846e52; LINE-HEIGHT: 20px; FONT-FAMILY: Arial
+}
+.hp-brand DT A {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #846e52; LINE-HEIGHT: 20px; FONT-FAMILY: Arial
+}
+.bline {
+	BORDER-BOTTOM: #e8e8e8 1px solid
+}
+.hp-brand DD {
+	COLOR: #999; TEXT-INDENT: 2em; LINE-HEIGHT: 20px
+}
+.hp-brand DD A {
+	COLOR: #846e52; TEXT-DECORATION: underline
+}
+.hp-brand A:hover {
+	COLOR: #ff6600
+}
+.catalist {
+	FLOAT: left; OVERFLOW: hidden
+}
+.catalist LI {
+	BORDER-RIGHT: #cacaca 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 8px -1px 0px 0px; LINE-HEIGHT: 14px; PADDING-TOP: 0px
+}
+.catalist LI.bornone {
+	BORDER-RIGHT-STYLE: none
+}
+.ca LI {
+	MARGIN-TOP: 5px
+}
+.catalist LI A:hover {
+	TEXT-DECORATION: underline
+}
+#audiobar {
+	Z-INDEX: 100; LEFT: 0px; WIDTH: 100%; POSITION: fixed; TOP: 0px; HEIGHT: 60px; min-width: 950px
+}
+#audio {
+	MARGIN: 0px auto; WIDTH: 950px; HEIGHT: 60px
+}
+ HTML {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(about:blank)
+}
+ HTML BODY {
+	BACKGROUND-ATTACHMENT: fixed; BACKGROUND-IMAGE: url(about:blank)
+}
+ HTML #audiobar {
+	BOTTOM: auto; POSITION: absolute; ; TOP: expression(eval(document.documentElement.scrollTop))
+}
+.newcommend {
+	FLOAT: right; WIDTH: 220px
+}
+.newcommend UL {
+	MARGIN-LEFT: 5px
+}
+.newcommend LI {
+	LIST-STYLE-POSITION: inside; LINE-HEIGHT: 30px; LIST-STYLE-TYPE: disc
+}
+.cl {
+	CLEAR: both; FLOAT: none; MARGIN: 10px 0px
+}
+.h4 {
+	CLEAR: both
+}
+.h4 A.sub03 {
+	MARGIN-TOP: -56px; BACKGROUND: url(../../i/hp/navcata.gif) no-repeat 0px -100px; FLOAT: left; MARGIN-LEFT: 10px; OVERFLOW: hidden; WIDTH: 186px; TEXT-INDENT: -9em; HEIGHT: 54px
+}
+.h4 A.sub03-red {
+	MARGIN-TOP: -30px; COLOR: #e61c4c; MARGIN-RIGHT: 10px; TEXT-DECORATION: underline
+}
+.womanbrand {
+	PADDING-LEFT: 212px; BACKGROUND: url(../../i/hp/wbrand-line.gif) repeat-x 0px 100%; MARGIN: 10px 4px 0px; HEIGHT: 40px
+}
+.womanbrand LI {
+	FLOAT: left; MARGIN-RIGHT: 5px; HEIGHT: 40px
+}
+.womanbrand LI A {
+	BORDER-RIGHT: #fff 2px solid; BORDER-TOP: #fff 2px solid; DISPLAY: block; FONT-WEIGHT: 600; FONT-SIZE: 18px; BACKGROUND: url(../../i/hp/brandw-list.jpg) no-repeat 10px 4px; OVERFLOW: hidden; BORDER-LEFT: #fff 2px solid; WIDTH: 136px; TEXT-INDENT: -99em; LINE-HEIGHT: 36px; BORDER-BOTTOM: #fff 0px solid; FONT-FAMILY: Arial
+}
+.womanbrand LI A.a1 {
+	BACKGROUND-POSITION: -125px 4px
+}
+.womanbrand LI A.a2 {
+	BACKGROUND-POSITION: -248px 4px
+}
+.womanbrand LI A:hover {
+	BORDER-RIGHT: #9b8269 2px solid; BORDER-TOP: #9b8269 2px solid; BORDER-LEFT: #9b8269 2px solid; COLOR: #666; BORDER-BOTTOM: #fff 2px solid; TEXT-DECORATION: none
+}
+.womanbrand LI.cur A {
+	BORDER-RIGHT: #9b8269 2px solid; BORDER-TOP: #9b8269 2px solid; BORDER-LEFT: #9b8269 2px solid; COLOR: #666; BORDER-BOTTOM: #fff 2px solid; TEXT-DECORATION: none
+}
+DIV.wbrand {
+	DISPLAY: none
+}
+DIV.cur {
+	DISPLAY: block
+}
+.wp {
+	PADDING-LEFT: 12px; FONT-WEIGHT: 600; COLOR: #6b6b6b
+}
+#hd-nav .wnav .navlist {
+	MARGIN-TOP: 0px; FLOAT: none; MARGIN-BOTTOM: 1px
+}
+#hd-nav .brandlink {
+	MARGIN-LEFT: 12px; WIDTH: 105px
+}
+#hd-nav .brandlink A {
+	DISPLAY: block; BACKGROUND: url(http://img.m18.com/web/i/hp/brandbg2.gif) no-repeat 0px 0px; COLOR: #5b5b5b; LINE-HEIGHT: 23px; HEIGHT: 23px; TEXT-ALIGN: center
+}
+#hd-nav .brandlink A:hover {
+	BACKGROUND: url(http://img.m18.com/web/i/hp/brandbg2.gif) no-repeat 0px 0px
+}
+#hd-nav .wnav {
+	WIDTH: 321px
+}
+#hd-nav .wnav .wpp {
+	WIDTH: 180px
+}
+H3 {
+	BACKGROUND: url(../../i/hp/navcata_new.gif) no-repeat 0px 0px
+}
+#ulList LI {
+	DISPLAY: none
+}
+#ulList LI.cur {
+	DISPLAY: block
+}
+.sidenew {
+	FLOAT: right; WIDTH: 240px
+}
+.bnav {
+	POSITION: relative
+}
+.bnav LI {
+	FLOAT: left; LINE-HEIGHT: 24px; MARGIN-RIGHT: 5px
+}
+.bnav LI A {
+	BORDER-RIGHT: #efefef 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #efefef 1px solid; DISPLAY: block; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 0px; BORDER-LEFT: #efefef 1px solid; COLOR: #333; PADDING-TOP: 0px; BORDER-BOTTOM: #efefef 1px solid; HEIGHT: 24px
+}
+.bnav LI.cur A {
+	BORDER-BOTTOM: #fff 1px solid
+}
+.bnav LI A:hover {
+	BORDER-BOTTOM: #fff 1px solid
+}
+.bnav LI A:hover {
+	CURSOR: pointer; TEXT-DECORATION: none
+}
+.bnav LI.cur A {
+	FONT-WEIGHT: 600; CURSOR: default
+}
+.img-brand {
+	BACKGROUND: url(http://img.m18.com/web/i/comm/load.gif) no-repeat 50% 50%; WIDTH: 236px; HEIGHT: 167px
+}
+.img-brand IMG {
+	WIDTH: 236px; HEIGHT: 167px
+}
+.hpb {
+	BORDER-RIGHT: #efefef 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #efefef 1px solid; MARGIN-TOP: -1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 2px; BORDER-LEFT: #efefef 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #efefef 1px solid
+}
+.hpb {
+	DISPLAY: none
+}
+.sidenew .cur {
+	DISPLAY: block
+}
+.hpb LI.hover {
+	BACKGROUND: #fffac8
+}
+.five LI {
+	WIDTH: 140px
+}
+.five A {
+	WIDTH: 140px
+}
+.five {
+	WIDTH: 705px
+}
+.brandrank {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; BACKGROUND: #e8e8e8; MARGIN-BOTTOM: 1px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 27px; PADDING-TOP: 0px; HEIGHT: 27px
+}
+.brandrank .btitle {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; FONT-FAMILY: "Microsoft YaHei"
+}
+.listb {
+	MARGIN-TOP: 5px
+}
+.listb LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 4px; LINE-HEIGHT: 14px; PADDING-TOP: 4px; HEIGHT: 14px
+}
+.listb LI A {
+	DISPLAY: inline; OVERFLOW: hidden
+}
+.listb LI A:hover {
+	TEXT-DECORATION: none
+}
+.listb LI A .brand-ico {
+	DISPLAY: inline; FONT-SIZE: 11px; BACKGROUND: url(../../i/hp/ico-b.gif) no-repeat 0px -22px; FLOAT: left; WIDTH: 14px; COLOR: #fff; LINE-HEIGHT: 14px; MARGIN-RIGHT: 7px; FONT-FAMILY: Arial; HEIGHT: 14px; TEXT-ALIGN: center
+}
+.listb LI A .hc {
+	BACKGROUND-POSITION: 0px 0px; FONT-WEIGHT: 600
+}
+.ico-rank {
+	PADDING-RIGHT: 12px; DISPLAY: inline; FONT-SIZE: 11px; BACKGROUND: url(../../i/hp/ico-rank.gif) no-repeat 100% 3px; COLOR: #666; FONT-FAMILY: Arial
+}

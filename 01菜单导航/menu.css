@@ -1,0 +1,54 @@
+BODY {
+	FONT: 12px/16px Tahoma,Arial, sans-serif;
+	COLOR: #333;
+	background-color: #AEE3E3;
+}
+A {
+	COLOR: #22ac38; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: red; TEXT-DECORATION: underline
+}
+.menu {
+	PADDING-LEFT: 40px;
+	MARGIN: auto auto 10px;
+	LINE-HEIGHT: 42px;
+	HEIGHT: 45px;
+	TEXT-ALIGN: center;
+}
+.menu A {
+	PADDING-RIGHT: 13px; DISPLAY: block; PADDING-LEFT: 13px; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff; PADDING-TOP: 0px
+}
+.menu A:hover {
+	COLOR: #f39800
+}
+.menu .select {
+	PADDING-RIGHT: 15px; 
+}
+DIV.menu {
+	
+}
+DIV.menu-list {
+	BORDER-RIGHT: #d6d6d6 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #d6d6d6 1px solid; DISPLAY: none; PADDING-LEFT: 0px; BACKGROUND: #fff; FILTER: alpha(opacity=60); PADDING-BOTTOM: 5px; BORDER-LEFT: #d6d6d6 1px solid; WIDTH: 100px; PADDING-TOP: 0px; BORDER-BOTTOM: #d6d6d6 1px solid; POSITION: absolute; opacity: 0.6
+}
+DIV.menu-list UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.menu-list UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV.menu-list UL LI {
+	MARGIN: 5px 5px 0px; LIST-STYLE-TYPE: none
+}
+DIV.menu-list UL LI A {
+	DISPLAY: block; WIDTH: 100%; CURSOR: pointer; COLOR: #000; LINE-HEIGHT: 25px; HEIGHT: 25px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+DIV.menu-list UL LI A SPAN {
+	DISPLAY: block; WIDTH: 100%; HEIGHT: 100%
+}
+DIV.menu-list UL LI A:hover {
+	BACKGROUND: url(bg-left.jpg) #5d98d4 no-repeat 0px 0px; COLOR: #fff
+}
+DIV.menu-list UL LI A:hover SPAN {
+	BACKGROUND: url(bg-right.jpg) no-repeat right top
+}

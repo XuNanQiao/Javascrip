@@ -1,0 +1,30 @@
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,li,form,img,dl,dt,dd,table,th,td,blockquote,fieldset,div,strong,label,em{margin:0;padding:0;border:0;}
+ul,ol,li{list-style:none;}
+input,button{margin:0;font-size:12px;vertical-align:middle;}
+body{font-size:12px;font-family:Arial, Helvetica, sans-serif;  text-align:center; margin:0 auto;}
+table{border-collapse:collapse;border-spacing:0;}
+
+.clearfloat{height:0;font-size:1px;clear:both;line-height:0;}
+
+#container{  width:100%; text-align:left; margin:0 auto;  }
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef9b11; text-decoration:underline;}
+
+.box {border: #d8d8d8 1px solid; WIDTH: 648px; margin:60px auto;}
+.box H2 {FLOAT: left; font-size:14px; padding:5px 20px; font-weight:normal;}
+.box .hd {BACKGROUND: #fbfcff}
+.box .bd {BACKGROUND: #fbfcff}
+.box .sildPicBar {FLOAT: right; OVERFLOW: hidden; WIDTH: 86px; MARGIN-RIGHT: 18px; PADDING-TOP: 6px; ZOOM: 1; HEIGHT: 22px; _display: inline}
+.box .pre {background:url(../images/pre.gif) no-repeat; FLOAT: left; WIDTH: 20px; CURSOR: pointer; MARGIN-RIGHT: 8px; HEIGHT: 15px; _display: inline}
+.box .next { background:url(../images/next.gif) no-repeat; FLOAT: right; WIDTH: 20px; CURSOR: pointer; HEIGHT: 15px}
+.box .sildPicBar LI {MARGIN-TOP: 5px; background:url(../images/icon01.gif) no-repeat; FLOAT: left; MARGIN-LEFT: 3px; WIDTH: 6px; CURSOR: pointer; HEIGHT: 6px; _display: inline}
+.box .sildPicBar LI.select {background:url(../images/icon02.gif) no-repeat;}
+.box .bd {PADDING-LEFT: 19px; BACKGROUND: #fbfcff; PADDING-BOTTOM: 0px; WIDTH: 629px; PADDING-TOP: 5px}
+.box .cnt-wrap {OVERFLOW: hidden; WIDTH: 624px; ZOOM: 1; HEIGHT: 142px}
+.box .cnt {WIDTH: 1872px}
+.box LI {FLOAT: left; WIDTH: 156px}
+.box .cnt SPAN {WIDTH: 100%; COLOR: #7e7e7e; TEXT-ALIGN: left}
+.box .cnt .a1{ display:block; width:140px; height:105px;border: #ccc 1px solid; margin-bottom:8px;}
+.box .cnt .a1 img{ width:100%; height:100%;}
+.box .cnt .a1:hover{ border:1px solid #ef9b11;}

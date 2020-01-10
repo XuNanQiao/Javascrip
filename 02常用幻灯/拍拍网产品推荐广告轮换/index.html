@@ -1,0 +1,188 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="Copyright" content="懒人图库 http://www.lanrentuku.com/" />
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为拍拍网产品推荐广告轮换[JS...，属于站长常用代码，更多焦点图代码请访问懒人图库JS代码频道。" />
+<title>拍拍网产品推荐广告轮换[JS..._懒人图库</title>
+</head>
+
+<body>
+<div align="center">
+
+<div style="MARGIN: 0px; OVERFLOW: hidden; WIDTH: 360px; POSITION: relative; HEIGHT: 195px;">
+  <div id=l1 style="LEFT: 0px; POSITION: absolute; TOP: 0px"><a id=linkl1 
+      href="http://www.lanrentuku.com/"><img 
+      id=img51 height=195 src="images/index_roll_1.jpg" width=360 
+      border=0 /></a></div>
+  <div id=l2 style="LEFT: 360px; POSITION: absolute; TOP: 0px"><a id=linkl2 
+      href="http://www.lanrentuku.com/"><img id=img52 
+      height=195 src="images/index_roll_2.jpg" width=360 
+      border=0 /></a></div>
+  <div id=l3 style="LEFT: 720px; POSITION: absolute; TOP: 0px"><a id=linkl3 
+      href="http://www.lanrentuku.com/"><img id=img53 
+      height=195 src="images/index_roll_3.jpg" width=360 
+      border=0 /></a></div>
+  <div id=l4 style="LEFT: 1080px; POSITION: absolute; TOP: 0px"><a id=linkl4 
+      href="http://www.lanrentuku.com/"><img id=img54 
+      height=195 src="images/index_roll_4.jpg" width=360 
+      border=0 /></a></div>
+  <div id=l5 style="LEFT: 1440px; POSITION: absolute; TOP: 0px"><a id=linkl5 
+      href="http://www.lanrentuku.com/"><img 
+      id=img55 height=195 src="images/index_roll_5.jpg" width=360 
+      border=0 /></a></div>
+  <div id=l0 
+      style="Z-INDEX: 999999; LEFT: 0px; POSITION: absolute; TOP: 0px"><a 
+      id=link5pic href="http://www.lanrentuku.com/" 
+      target=_blank><img height=195 src="images/index_roll_bg.gif" 
+      width=360 border=0 /></a></div>
+  <div id=lfloat 
+      style="Z-INDEX: 9999999; LEFT: 193px; WIDTH: 150px; POSITION: absolute; TOP: 174px; HEIGHT: 15px"><a 
+      id=btnimg1 href="http://www.lanrentuku.com/" 
+      target=_blank><img id=pnl1 onMouseOver="javascript:picsw('l1');" 
+      style="BORDER-TOP-STYLE: none; MARGIN-RIGHT: 5px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+      onmouseout=javascript:startauto(); height=15 
+      src="images/pl1.gif" width=25 name=pnl1 /></a><a id=btnimg2 
+      href="http://www.lanrentuku.com/" 
+      target=_blank><img id=pnl2 onMouseOver="javascript:picsw('l2');" 
+      style="BORDER-TOP-STYLE: none; MARGIN-RIGHT: 5px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+      onmouseout=javascript:startauto(); height=15 
+      src="images/pl2a.gif" width=25 /></a><a id=btnimg3 
+      href="http://www.lanrentuku.com/" target=_blank><img 
+      id=pnl3 onMouseOver="javascript:picsw('l3');" 
+      style="BORDER-TOP-STYLE: none; MARGIN-RIGHT: 5px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+      onmouseout=javascript:startauto(); height=15 
+      src="images/pl3a.gif" width=25 /></a><a id=btnimg4 
+      href="http://www.lanrentuku.com/" target=_blank><img 
+      id=pnl4 onMouseOver="javascript:picsw('l4');" 
+      style="BORDER-TOP-STYLE: none; MARGIN-RIGHT: 5px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+      onmouseout=javascript:startauto(); height=15 
+      src="images/pl4a.gif" width=25 /></a><a id=btnimg5 
+      href="http://www.lanrentuku.com/" 
+      target=_blank><img id=pnl5 onMouseOver="javascript:picsw('l5');" 
+      style="BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none" 
+      onmouseout=javascript:startauto(); height=15 
+      src="images/pl5a.gif" width=25 /></a></div>
+</div>
+<script language=javascript type=text/javascript>
+
+var rdm=Math.random();
+rdm=Math.floor(rdm*5)+1;
+document.getElementById("img51").src="images/index_roll_"+rdm+".jpg";
+document.getElementById("linkl1").href=document.getElementById("linkl"+rdm+"").href;
+document.getElementById("img5"+rdm+"").src="images/index_roll_1.jpg";
+document.getElementById("linkl"+rdm+"").href="http://www.lanrentuku.com/"
+document.getElementById("link5pic").href=document.getElementById("linkl1").href;
+document.getElementById("btnimg1").href=document.getElementById("linkl1").href;
+document.getElementById("btnimg"+rdm+"").href="http://www.lanrentuku.com/"
+var layeri=0;
+var stopshow=0;
+var timeout=0;
+
+function moveformat(id){
+if(stopshow==0){
+picswin(id);
+var browser=navigator.appName;
+if(browser!="Microsoft Internet Explorer"){
+layeri++;
+document.getElementById(id).style.zIndex = layeri;
+document.getElementById(id).style.left=(0+"px");
+var linkid="link"+id;
+document.getElementById("link5pic").href=document.getElementById(linkid).href;
+}
+else{
+document.getElementById(id).style.posLeft = 360;
+layeri++;
+document.getElementById(id).style.zIndex = layeri;
+movestart(id);
+}
+}
+}
+
+function movestart(id){
+if(document.getElementById(id).style.posLeft!=0){
+var mnum=document.getElementById(id).style.posLeft*0.2;
+var x=document.getElementById(id).style.posLeft-mnum;
+document.getElementById(id).style.posLeft=x;
+moveid=id;
+setTimeout("movestart(moveid);",30);
+}
+else{
+var linkid="link"+id;
+document.getElementById("link5pic").href=document.getElementById(linkid).href;
+}
+}
+
+var i=1;
+
+function showindexad(){
+if (i<5 && stopshow==0){
+  i++;
+  var picid="l";
+  picid=picid+i;
+  setTimeout("moveformat('"+picid+"');showindexad();",5000);
+  }
+else if(stopshow==0){
+  i=1;
+  var picid="l";
+  picid=picid+i;
+  setTimeout("moveformat('"+picid+"');showindexad();",5000);
+  }
+else{
+timeout=1;
+}
+}
+
+showindexad();
+
+function picsw(id) {
+if(document.getElementById("pn"+id+"").src!="images/p"+id+".gif"){
+picswin(id);
+showindexad2(id);
+}
+}
+
+function picswin(id){
+document.getElementById("pnl1").src="images/pl1a.gif";
+document.getElementById("pnl2").src="images/pl2a.gif";
+document.getElementById("pnl3").src="images/pl3a.gif";
+document.getElementById("pnl4").src="images/pl4a.gif";
+document.getElementById("pnl5").src="images/pl5a.gif";
+document.getElementById("pn"+id+"").src="images/p"+id+".gif";
+}
+
+function showindexad2(id){
+  stopshow=1;
+  var browser=navigator.appName;
+  if(browser!="Microsoft Internet Explorer"){
+  layeri++;
+  document.getElementById(id).style.zIndex = layeri;
+  document.getElementById(id).style.left=(0+"px");
+  var linkid="link"+id;
+  document.getElementById("link5pic").href=document.getElementById("link"+id).href;
+  }
+else{
+  document.getElementById(id).style.posLeft = 360;
+  layeri++;
+  document.getElementById(id).style.zIndex = layeri;
+  movestart(id);
+  }
+}
+function startauto(){
+  stopshow=0;
+  if(timeout==1){
+  showindexad();
+  timeout=0;
+  }
+}
+</script>
+<br>
+<p>　代码整理：<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a> </p>
+<p>＊尊重他人劳动成果，转载请自觉注明出处<a href="http://www.lanrentuku.com/" target="_blank"></a></p>
+<p align="center"></p>
+<p align="center"></p>
+<p align="center"></p>
+<p>&nbsp;</p>
+</div>
+</body>
+</html>

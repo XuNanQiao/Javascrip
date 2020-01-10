@@ -1,0 +1,51 @@
+str为要去除空格的字符串:
+
+去除所有空格:   
+str   =   str.replace(/\s+/g,"");       
+去除两头空格:   
+str   =   str.replace(/^\s+|\s+$/g,"");
+
+去除左空格：
+
+str=str.replace( /^\s*/, '');
+
+去除右空格：
+
+str=str.replace(/(\s*$)/g, "");
+
+
+SCRIPT LANGUAGE="JavaScript">   
+<!--   
+//出处:网上搜集   
+// Trim() , Ltrim() , RTrim()   
+String.prototype.Trim = function()   
+{   
+return this.replace(/(^\s*)|(\s*$)/g, "");   
+}   
+String.prototype.LTrim = function()   
+{   
+return this.replace(/(^\s*)/g, "");   
+}   
+String.prototype.RTrim = function()   
+{   
+return this.replace(/(\s*$)/g, "");   
+}   
+//-->   
+</SCRIPT>   
+<input type="text" value="    前后都是空格     " id="space">   
+<input type="button" value="去前后空格"onclick="javascript:document.getElementById('space').value=document.getElementById('space').value.Trim();document.getElementById('space').select();">   
+<input type="button" value="去前空格"onclick="javascript:document.getElementById('space').value=document.getElementById('space').value.LTrim();document.getElementById('space').select();">   
+<input type="button" value="去后空格"onclick="javascript:document.getElementById('space').value=document.getElementById('space').value.RTrim();document.getElementById('space').select();">   
+<input type="button" value="还原" onclick="javascript:document.getElementById('space').value='      前后都是空格     ';">   
+<a href="http://www.yaoasnsi.com" target="_blank">访问yaosansi.com</a>  
+
+
+去除所有空格: 
+str = str.replace(/\s+/g,""); 
+
+去除两头空格: 
+str = str.replace(/^\s+|\s+$/g,"");
+
+去除空格(TimeSheet用过)
+
+arg0=arg0.replace(/\s+$|^\s+/g,"");

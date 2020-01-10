@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="../include/js/jquery.js" type="text/javascript"></script>
+
+
+
+
+  <script language="javascript" type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script><!--根据ip得到城市-->
+  <script language="javascript" type="text/javascript" >
+      function setCookie(c_name, value, expiredays) {
+          var exdate = new Date();
+          exdate.setDate(exdate.getDate() + expiredays);
+          document.cookie = c_name + "=" + encodeURI(value) + ((expiredays == null) ? "" : ";expires=" + exdate.toGMTString()) + ";path=/";
+      }
+      function getCookie(c_name) {
+          if (document.cookie.length > 0) {
+              c_start = document.cookie.indexOf(c_name + "=");
+              if (c_start != -1) {
+                  c_start = c_start + c_name.length + 1;
+                  c_end = document.cookie.indexOf(";", c_start);
+                  if (c_end == -1) c_end = document.cookie.length;
+                  return decodeURI(document.cookie.substring(c_start, c_end));
+
+              }
+          }
+          return "";
+      }
+
+
+      window.onload = function loa() {
+          var city = getCookie("citys_click");
+
+          if (city != null && city != "") {
+              $("#province").html(city);
+          }
+          else { 
+                $("#province").html(remote_ip_info.province);//根据ip得到城市
+                $("#city").html(remote_ip_info.city); 
+                //document.write("您的IP是" + remote_ip_info.start + "，您来自" + remote_ip_info.country + remote_ip_info.province + remote_ip_info.city + "，线路是" + remote_ip_info.isp + remote_ip_info.type + remote_ip_info.district) 
+          }
+
+
+          
+      }
+
+
+     
+    
+    
+    
+    function sdfkdk() {
+        var sdf = document.getElementById("divWeizhi");
+        document.getElementById("divWeizhi").style.display = "block";
+        window.setTimeout(hideDIV, 2000);
+    }
+     
+     
+     
+     
+     
+     
+     var hideDIV = function hideDIV() {
+        document.getElementById("divWeizhi").style.display="none";
+     }
+
+    //显示所有城市
+     function showCitys() {
+         $("#allCitys").show();
+     }
+     //修改城市
+     function updateCity(e) {
+         $("#province").html(e.toString());//省
+         $("#allCitys").hide(); //所有的城市
+         
+         $("#fontWeizhi").html(e.toString()); //定时消失的div里的城市
+         var sdf = document.getElementById("divWeizhi"); //定时消失的div
+         document.getElementById("divWeizhi").style.display = "block";
+         window.setTimeout(hideDIV, 2000);
+
+         $.ajax({
+             url: '../jianzhang/Ajax.aspx?zixun=chaxun',
+             type: 'post',
+             async: false,
+             data: "Value=" + 22,
+             datatype: 'json',
+             timeout: 10000,
+             beforeSend: function() {
+              $("#jiazai").show();
+             },
+             success: function(data) {
+                 var jsonStr = data;
+                 if (jsonStr != "") {
+                     $("#jiazai").hide();
+                     
+                 }
+             },
+             complete: function() {
+             $("#jiazai").hide();
+             }
+         });
+
+
+         //设置修改后的城市
+         setCookie("citys_click", e.toString(), 7);
+     }
+</script>
+</head>
+<body>
+
+<div>
+    <div><div>我在<span id="province">ffff</span>[<a onclick="showCitys();">修改</a>]</div><div id="jiazai" style="display:none;"><img src="../jianzhang/image/1.gif" />加载中。。。。</div></div>
+    <p>我在<span id="city">ffff</span></p>
+</div>
+<div id="divWeizhi" style="background:yellow; position:relative; font-size:12px; padding:3px; z-index:323; border:1px solid red; top:-25px; left:20px; display:none;width:150px; height:20px; ">我现在的位置是<font id="fontWeizhi"></font></div>
+
+
+<p onclick="sdfkdk();">dddddddddddd</p><br />
+
+
+
+
+
+
+<div id="allCitys" style="display:none; position:relative;width:300px; height:300px;background-color:Green;top:-30px; left:30px;">
+     <a onclick="updateCity('河南');">河南</a> <br /><a onclick="updateCity('河北');">河北</a>
+   
+</div>
+
+</body>
+</html>

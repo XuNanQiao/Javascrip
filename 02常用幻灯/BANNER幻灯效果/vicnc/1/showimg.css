@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+margin:0px auto;
+font:12px sans-serif;
+}
+
+ul{
+list-style:none;
+}
+li{float:left}
+h1{
+font-size:16px;
+font-weight:bolder;
+margin:3px;
+}
+
+a:link {
+	color: #000000;
+	text-decoration:none;
+}
+a:visited {
+	color: #000000;
+	text-decoration:none;
+}
+a:hover {
+	color: #008886;
+	text-decoration:none;
+}
+a:active {
+	color: #000000;
+	text-decoration:none;
+}
+img {
+	border: 0;
+}
+
+
+
+
+/* slide show */
+#topstory{
+width:510px;
+background-color:#999999;
+padding:5px;
+height:200px;
+}
+
+#featured {
+	width: 510px;
+	position: relative;
+    height:260px;
+    overflow:hidden;
+	background-color:#999999;
+}
+#featured .word {
+	position: absolute;
+	width: 510px;
+	height: 32px;
+	background: url(bg_transparent.gif) no-repeat;
+	left: 0;
+	bottom: 0;
+	z-index: 10;
+	padding: 5px;
+	color: #fff;
+}
+#featured .word h3{
+    font-size:13px;
+}
+#featured .ui-els-hide{          /* 没用 */
+    display: none;
+}
+
+#showframe{
+width: 510px;
+background-color:#999999;
+padding:5px;
+margin-bottom:5px;
+}
+#thumbs {
+    width: 505px;
+	list-style-type: none;
+	height: 28px;
+	background-color:#000;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
+#showtext{
+background-color:#5c5857;
+font-size:12px;
+color:#ffe700;
+padding:9px;
+}
+
+* html #thumbs {
+	height: 100%;
+}
+
+#thumbs li {
+	float: left;
+	margin-right: 5px;
+    width: 52px;
+    height: 24px;
+    display:inline;
+}
+#thumbs ul{
+    margin-top:3px;
+}
+#thumbs li.last_img {
+	margin-right: 4px;
+}
+#thumbs li.first {             /* 没用 */
+    margin:5px 10px 0pt 15px;
+	cursor: pointer;
+    width:20px;
+    height:13px;
+}
+#thumbs li.last {               /* 没用 */
+    margin:2px 12px 0pt 5px;
+	cursor: pointer;
+    width:63px;
+    height:20px;
+}
+#thumbs li a {
+	border: 2px solid #9c9c9c;
+    display:block;
+    font-size: 0;
+    width: 48px;
+}
+#thumbs li a:hover{
+    border: 2px solid #6633cc;
+}
+#thumbs li a.current{
+    border: 2px solid #6633cc;
+}
+#thumbs li.first img, #thumbs li.last img {
+	border: 0;
+}
+
+#thumbs li.last a{
+	border:0;
+}

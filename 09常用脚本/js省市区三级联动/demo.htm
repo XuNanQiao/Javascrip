@@ -1,0 +1,26 @@
+﻿<html>
+<head>   
+    <script type="text/javascript" src="jsAddress.js"></script>
+</head>
+<body>
+<div>
+省：<select id="cmbProvince"></select>
+市：<select id="cmbCity"></select>
+区：<select id="cmbArea"></select>
+<br /><br />
+省：<select id="Select1"></select>
+市：<select id="Select2"></select>
+区：<select id="Select3"></select>
+
+<br/><br/>
+<select id="peovince"></select>省
+<select id="City"></select>市
+<select id="Area"></select>区
+<script type="text/javascript">
+	addressInit('cmbProvince', 'cmbCity', 'cmbArea', '陕西', '宝鸡市', '金台区');
+	addressInit('Select1', 'Select2', 'Select3');
+	addressInit('peovince','City','Area')
+</script>
+</div>
+</body>
+</html>

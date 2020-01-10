@@ -1,0 +1,9 @@
+1.引用样式文件css/lrtk.css
+
+2.引用jquery的库文件js/jquery.js
+
+3.引用效果的具体js代码文件js/lrtk.js
+ 
+4.将id为xzw_starSys的DIV的内容复制到您的html文件
+
+5.如果您的页面编码为utf-8，请将lrtk.js的页面编码也改为utf-8，以免出现乱码问题

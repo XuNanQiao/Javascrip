@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title>逼真图片倒计时</title> 
+<meta http-equiv="content-type" content="text/html;charset=gb2312"> 
+<style type="text/css"> 
+.time{width:200px;height:25px;border:1px red solid;overflow:hidden;} 
+.time span{float:left;line-height:25px;height:25px;overflow:hidden;} 
+.time span.danwei{padding:0 1px;} 
+.clear{height:0;clear:both;overflow:hidden;} 
+</style> 
+</head> 
+<body> 
+距离发射升空还有： 
+<div class="time" id="time1"> 
+<span><img id="hour_01" alt="" src="20100917154719975.jpg"></span> 
+<span><img id="hour_02" alt="" src="20100917154719975.jpg"></span> 
+<span><img id="hour_03" alt="" src="20100917154719975.jpg"></span> 
+<span class="danwei">：</span> 
+<span><img id="minute_01" alt="" src="20100917154719975.jpg"></span> 
+<span><img id="minute_02" alt="" src="20100917154719975.jpg"></span> 
+<span class="danwei">：</span> 
+<span><img id="second_01" alt="" src="20100917154719975.jpg"></span> 
+<span><img id="second_02" alt="" src="20100917154719975.jpg"></span> 
+<br class="clear"> 
+</div> 
+<script type="text/javascript"> 
+var overa; 
+overa = new Date(2013, 10, 01, 00, 00);///第数日时间当时间超过999小时 
+var localNow = new Date(); 
+function clock1(){ 
+var local = new Date(); 
+var intDiff = overa.getTime() - local.getTime(); 
+if(intDiff <= 0){document.getElementById('time1').innerHTML = "活动已结束！";//显示活动结束 
+return false;} 
+var day = Math.floor(intDiff / (1000 * 60 * 60 * 24)); 
+var hour = Math.floor(intDiff / (1000 * 60 * 60)) - (day * 24); 
+var hour2 = Math.floor(intDiff / (1000 * 60 * 60)); 
+var minute = Math.floor(intDiff / (1000 * 60)) - (day * 24 * 60) - (hour * 60); 
+var second = Math.floor(intDiff / 1000) - (day * 24 * 60 * 60) - (hour * 60 * 60) - (minute * 60); 
+if (hour2 <= 99) hour2 = '0' + hour2; 
+if (day <= 9) day = '0' + day; 
+if (hour2 <= 9) hour2 = '0' + hour2; 
+if (minute <= 9) minute = '0' + minute; 
+if (second <= 9) second = '0' + second; 
+document.getElementById('hour_01').style.marginTop = (hour2.toString().substr(0,1)) * (-25) +'px'; 
+document.getElementById('hour_02').style.marginTop = (hour2.toString().substr(1,1)) * (-25) +'px'; 
+document.getElementById('hour_03').style.marginTop = (hour2.toString().substr(2,1)) * (-25) +'px'; 
+document.getElementById('minute_01').style.marginTop = (minute.toString().substr(0,1)) * (-25) +'px'; 
+document.getElementById('minute_02').style.marginTop = (minute.toString().substr(1,1)) * (-25) +'px'; 
+document.getElementById('second_01').style.marginTop = (second.toString().substr(0,1)) * (-25) +'px'; 
+document.getElementById('second_02').style.marginTop = (second.toString().substr(1,1)) * (-25) +'px'; 
+setTimeout("clock1()", 1000); 
+} 
+clock1(); 
+</script> 
+</body> 
+</html>
+
+详细出处参考：http://www.jb51.net/article/24851.htm

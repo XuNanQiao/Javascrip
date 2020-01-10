@@ -1,0 +1,59 @@
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #fff; COLOR: #000; LINE-HEIGHT: 150%; FONT-FAMILY: Tahoma,"宋体"; TEXT-ALIGN: center
+}
+#focus {
+	WIDTH: 724px; POSITION: relative; HEIGHT: 300px     /*----这里控制实际幻灯宽度和高度（就是实际的数字部分）----*/
+}
+#focus_content {
+	OVERFLOW: hidden; WIDTH: 724px; POSITION: relative; HEIGHT: 300px    /*----这里三部分一样的尺寸即可----*/
+}
+.coda-slider .panel-container {
+	POSITION: relative
+}
+.coda-slider .panel {
+	DISPLAY: block; FLOAT: left; WIDTH: 724px; HEIGHT: 300px    /*----这里三部分一样的尺寸即可----*/
+}
+#focus_content .panel A {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 724px; HEIGHT: 300px    /*----这里三部分一样的尺寸即可----*/
+}
+
+/*----以下样式主页面的脚本使用到----*/
+
+#daily_chose {
+	RIGHT: 37px; POSITION: absolute; TOP: 7px
+}
+#fashiongallery LI {
+	WIDTH: 96px; MARGIN-RIGHT: 14px
+}
+#fashiongallery LI .img {
+	DISPLAY: block; MARGIN-BOTTOM: 6px; OVERFLOW: hidden; WIDTH: 96px; HEIGHT: 96px
+}
+#fashiongallery LI .title {
+	DISPLAY: block; FONT-WEIGHT: 700; OVERFLOW: hidden; HEIGHT: 18px; TEXT-ALIGN: center
+}
+
+/*----以下样式JS文件里面使用到----*/
+
+#focus .coda-nav {
+	CLEAR: both; Z-INDEX: 13; RIGHT: 4px; BOTTOM: 10px; POSITION: absolute
+}
+#focus .coda-nav UL {
+	CLEAR: both; DISPLAY: block; OVERFLOW: hidden
+}
+#focus .coda-nav LI {
+	BACKGROUND: #fff; FLOAT: left; OVERFLOW: hidden; MARGIN-RIGHT: 6px
+}
+#focus .coda-nav .tab1 a{background-position:0 -360px;}
+#focus .coda-nav .tab1 .current{background-position:0 -374px;}
+#focus .coda-nav .tab2 a{background-position:-16px -360px;}
+#focus .coda-nav .tab2 .current{background-position:-16px -374px;}
+#focus .coda-nav .tab3 a{background-position:-32px -360px;}
+#focus .coda-nav .tab3 .current{background-position:-32px -374px;}
+#focus .coda-nav .tab4 a{background-position:-48px -360px;}
+#focus .coda-nav .tab4 .current{background-position:-48px -374px;}
+#focus .coda-nav .tab5 a{margin-right:0;background-position:-64px -360px;}
+#focus .coda-nav .tab5 .current{background-position:-64px -374px;}
+
+#focus .coda-nav li a{float:left;width:16px;height:14px;background:url(main091015.png) no-repeat; margin-bottom:-1px;}
+
+

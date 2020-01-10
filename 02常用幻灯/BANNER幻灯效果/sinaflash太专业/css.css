@@ -1,0 +1,125 @@
+/* CSS Document */
+
+/* CSS Document */
+HTML {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+
+UL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+P {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+
+H3 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #fff; COLOR: #333
+}
+
+H2 {
+	FONT-SIZE: 14px
+}
+H3 {
+	FONT-SIZE: 14px
+}
+H4 {
+	FONT-SIZE: 14px
+}
+A {
+	COLOR: #656565; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #f00; TEXT-DECORATION: underline
+}
+
+
+#wrap {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; MARGIN: 0px auto; WIDTH: 950px; PADDING-TOP: 5px; TEXT-ALIGN: left
+}
+.newFocus {
+	BACKGROUND: #000; MARGIN: 10px 0px 0px; OVERFLOW: hidden; WIDTH: 950px; POSITION: relative; HEIGHT: 275px
+}
+.newFocus_con {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.newFocus_con .box {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 950px; ZOOM: 1; HEIGHT: 275px
+}
+.newFocus_con_i {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 650px; HEIGHT: 275px
+}
+.newFocus_con_i IMG {
+	BACKGROUND: url(1/loading.gif) no-repeat 50% 50%
+}
+.newFocus_con_t {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 300px; HEIGHT: 275px
+}
+.newFocus_con_t H3 {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 18px; PADDING-BOTTOM: 20px; COLOR: #fff; LINE-HEIGHT: 40px; PADDING-TOP: 30px; FONT-FAMILY: Î¢ÈíÑÅºÚ,ºÚÌå; TEXT-ALIGN: center
+}
+.newFocus_con_t H3 A {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.newFocus_con_t H3 A:visited {
+	COLOR: #fff; TEXT-DECORATION: none
+}
+.newFocus_con_t H3 A:hover {
+	COLOR: #fff2d0; TEXT-DECORATION: none
+}
+.newFocus_con_t H3 A:active {
+	COLOR: #fff2d0; TEXT-DECORATION: none
+}
+.newFocus_con_t P {
+	PADDING-RIGHT: 40px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; COLOR: #888; LINE-HEIGHT: 20px; PADDING-TOP: 0px
+}
+.newFocus_con_t A.playNow {
+	DISPLAY: block; BACKGROUND: url(1/bg_movie_003.png) no-repeat 0px 0px; MARGIN: 18px auto 0px; OVERFLOW: hidden; WIDTH: 137px; TEXT-INDENT: -999px; HEIGHT: 37px
+}
+.newFocus_con_t A.playNow:visited {
+	DISPLAY: block; BACKGROUND: url(1/bg_movie_003.png) no-repeat 0px 0px; MARGIN: 18px auto 0px; OVERFLOW: hidden; WIDTH: 137px; TEXT-INDENT: -999px; HEIGHT: 37px
+}
+.newFocus_con_t A.playNow:hover {
+	BACKGROUND-POSITION: 0px -50px
+}
+.newFocus_con_t A.playNow:active {
+	BACKGROUND-POSITION: 0px -50px
+}
+.newFocus_con_t A.playNow:unknown {
+	BACKGROUND-POSITION: 0px -50px
+}
+.newFocusArrL {
+	LEFT: 0px; OVERFLOW: hidden; WIDTH: 39px; CURSOR: pointer; POSITION: absolute; TOP: 118px; HEIGHT: 39px
+}
+.newFocusArrL A {
+	DISPLAY: block; BACKGROUND: url(1/bg_movie_002.png) no-repeat 1px 1px; MARGIN: -1px 0px 0px -1px; OVERFLOW: hidden; WIDTH: 41px; TEXT-INDENT: -999px; HEIGHT: 41px
+}
+.newFocusArrL A:hover {
+	BACKGROUND-POSITION: 1px -49px
+}
+.newFocusArrL A:active {
+	BACKGROUND-POSITION: 1px -49px
+}
+.newFocusArrL A:unknown {
+	BACKGROUND-POSITION: 1px -49px
+}
+.newFocusArrR {
+	RIGHT: 0px; OVERFLOW: hidden; WIDTH: 39px; CURSOR: pointer; POSITION: absolute; TOP: 118px; HEIGHT: 39px
+}
+.newFocusArrR A {
+	DISPLAY: block; BACKGROUND: url(1/bg_movie_002.png) no-repeat -49px 1px; MARGIN: -1px 0px 0px -1px; OVERFLOW: hidden; WIDTH: 41px; TEXT-INDENT: -999px; HEIGHT: 41px
+}
+.newFocusArrR A:hover {
+	BACKGROUND-POSITION: -49px -49px
+}
+.newFocusArrR A:active {
+	BACKGROUND-POSITION: -49px -49px
+}
+.newFocusArrR A:unknown {
+	BACKGROUND-POSITION: -49px -49px
+}
+.newFocus_i {
+	BACKGROUND: url(1/bg_movie_004.png) no-repeat; OVERFLOW: hidden; WIDTH: 3px; POSITION: absolute; HEIGHT: 3px
+}

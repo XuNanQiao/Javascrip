@@ -1,0 +1,116 @@
+/*----- 初始化设置 -----*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0}
+address,b,caption,cite,code,dfn,em,i,q,th { font-weight:normal; font-style:normal}
+big,h1,h2,h3,h4,h5,h6,small { font-size:100%}
+caption,th { text-align:left}
+del { font-family:Simsun}
+dfn { padding-right:2px; text-decoration:none; font-family:Arial}
+fieldset,img { border:0}
+input,select,textarea{ outline-style:none}
+li { list-style:none}
+q { quotes:none}
+q:before,q:after { content:""}
+strong { font-weight:bold}
+table { border-collapse:collapse; border-spacing:0}
+th { text-align:left}
+
+/* clear float */
+.cf { zoom:1}
+.cf:after { content:"."; clear:both; display:block; overflow:hidden; visibility:hidden; height:0; font-size:0}
+
+/* body */
+body { font:normal 12px/20px "Microsoft Yahei", Tahoma, Arial, sans-serif, Simsun; color:#656565; background:#eee}
+
+/* link */
+a { color:#656565; text-decoration:none; outline-style:none}
+a:hover { color:#c00; text-decoration:underline}
+
+/*----- 布局 -----*/
+.g-wrap { width:980px; margin:0 auto; padding-top:6px}
+.g-area01 { float:left; width:714px; padding-right:6px}
+
+/*----- 容器 -----*/
+
+/* space */
+.g-spc01 { margin-bottom:6px}
+
+/* block */
+.g-blk03 { border:1px solid #dbdbdb; background:url(XL_v2_g_block.png) left bottom repeat-x #fff}
+.g-blk03 .ttl { position:relative; height:43px; background:url(XL_v2_g_block.png) 0 0 repeat-x #e6e6e6}
+.g-blk03 .ttl ul { width:100%}
+.g-blk03 .ttl li, .g-blk03 .ttl big { float:left; height:20px; margin-left:-1px; padding:12px 0 11px; text-align:center; font-size:16px; font-weight:bold; border-left:1px solid #d0d0d0}
+.g-blk03 .ttl li { position:relative; cursor:pointer}
+.g-blk03 .ttl li:first-child { border-left-color:#dbdbdb}
+.g-blk03 .ttl li.selected { padding-top:10px; border-top:2px solid #c00; background:#fff}
+.g-blk03 .ttl big { position:absolute; right:0; top:0; float:none}
+.g-blk03 .ttl big i { padding-left:2px; font-size:18px; font-family:Arial}
+.g-blk03 .ttl q { position:absolute; left:75%; top:-6px; width:19px; height:16px; background:url(XL_v2_g_icon_01.png) 0 -1860px no-repeat}
+.g-blk03 .ttl li.selected q { top:-8px}
+.g-blk03 .ttl-2t li, .g-blk03 .ttl-2t big { width:50%}
+.g-blk03 .ttl-3t li { width:33%}
+.g-blk03 .ttl-3t li.last, .g-blk03 .ttl-3t big { width:34%}
+.g-blk03 .ttl-3t li:last-child { width:34%}
+.g-blk03 .ttl-4t li, .g-blk03 .ttl-4t big { width:25%; *width:24.99%}
+.g-blk03 .ttl-5t li, .g-blk03 .ttl-5t big { width:20%}
+.g-blk03 .ttl-6t li { width:17%}
+.g-blk03 .ttl-6t li.last, .g-blk03 .ttl-6t big { width:15%}
+.g-blk03 .ttl-6t li:last-child { width:15%}
+
+/*--- special ---*/
+.majorCategory { padding:16px 20px 24px}
+.majorCategory .intro { padding-bottom:8px; line-height:24px; color:#999}
+.majorCategory .list { padding-top:8px; background:url(XL_v2_g_line_hr.png) left top repeat-x}
+.majorCategory .list table { width:100%}
+.majorCategory .list th { width:120px; padding:8px 0; text-align:center; font-size:14px; font-weight:bold; color:#c00; background-color:#f3f3f3}
+.majorCategory .list td { padding:8px 0 8px 12px}
+.majorCategory .list td span { float:left; padding-right:20px; white-space:nowrap}
+.majorCategory .list .hr td { overflow:hidden; height:17px; padding:0; line-height:17px; font-size:0; background:url(XL_v2_g_line_hr.png) left center repeat-x}
+.majorCategory .recommend { padding-top:4px}
+.majorCategory .recommend dt { float:left; width:120px; padding:14px 0; line-height:18px; text-align:center; background:#f3f3f3}
+.majorCategory .recommend dd { float:left; width:540px; padding-left:12px}
+.majorCategory .recommend dd a.pic { float:left; width:152px; height:60px; padding:1px; border:1px solid #dbdbdb}
+.majorCategory .recommend dd a.pic img { width:100%; height:100%; vertical-align:top}
+.majorCategory .recommend dd strong, .majorCategory .recommend dd span { float:left; overflow:hidden; width:374px; padding-left:10px}
+.majorCategory .recommend dd strong { height:24px; line-height:24px}
+.majorCategory .recommend dd span { height:40px; line-height:20px; color:#999}
+.majorCategory .recommend dd a { color:#c00}
+.majorCategory .recommend dd a.pic:hover { border-color:#c00}
+
+/* toggle */
+.show { display:block}
+.hide { display:none}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,49 @@
+静态页统计点击量
+
+1在静态页面加入 <script src="../user/count.aspx?id=6"></script>(如果是由动态页先生成静态页，这句话在动态页面)
+
+2.建立.net页面 count.aspx 首先把count.aspx页面里面的代码除第一行 <%@ Page Language="C#" AutoEventWireup="true" CodeFile="count.aspx.cs" Inherits="user_count" %> 外，其它全部都删掉
+
+3count.aspx.cs页面
+
+
+
+using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class user_count : System.Web.UI.Page
+{
+protected void Page_Load(object sender, EventArgs e)
+{
+string id = Request.QueryString["id"];
+        if (id != null)
+        {
+            SqlConnection conn = new SqlConnection("server=VSS-SERVER,1444;database=sdzzy#2012@#zy;uid=58#sdzzy@#5#w7j#l;pwd=XueLe#DevTeams");
+            conn.Open();
+
+            SqlCommand cmd = new SqlCommand("select Hits from H_university where ID= " + id, conn);//读阅读数
+            string num = cmd.ExecuteScalar().ToString();
+
+            cmd = new SqlCommand("update H_university set Hits=Hits+1 where ID= " + id, conn);//读阅读数+1
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+
+            Response.Write("document.write('" + num + "');");
+        }
+        else
+        {
+            Response.Write("document.write('null');");
+        }
+
+
+    }
+}

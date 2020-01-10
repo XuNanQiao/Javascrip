@@ -1,0 +1,8 @@
+Math.floor(Math.random() * 2); //0,1随机生成0或1
+
+
+
+$("#ul li span.zzb_jz_li4").children("img").each(function() { 
+	var s = Math.floor(Math.random() * 2+1); 
+	$(this).attr("src", "image/gct_ph" + s + ".gif"); 
+}); 

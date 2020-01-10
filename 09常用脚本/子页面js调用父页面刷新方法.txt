@@ -1,0 +1,10 @@
+Response.Write("<script language=javascript>alert('恭喜你操作成功！');window.close();window.opener.document.getElementById('linkRefrsh').click();</script>");
+
+
+
+
+有时也可以是window.parent.document.getElementById('linkRefrsh').click();
+
+
+父页面的控件ID号：linkRefrsh   --------------》（执行的刷新方法，可以为隐藏控件，不过属性是display，visibility不行）
+

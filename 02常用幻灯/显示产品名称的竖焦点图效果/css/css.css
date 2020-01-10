@@ -1,0 +1,12 @@
+BODY {
+	FONT: 12px "Verdana"; COLOR: #333333; TEXT-ALIGN: center
+}
+IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#linkPush A {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 7px; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 6px; HEIGHT: 28px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.overflow {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}

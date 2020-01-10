@@ -1,0 +1,27 @@
+BODY {
+	FONT-SIZE: 12px; COLOR: #666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif, 'ËÎÌו'; TEXT-ALIGN: center
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.container {
+	OVERFLOW: hidden; WIDTH: 850px; HEIGHT: 157px
+}
+.container A IMG {
+	WIDTH: 850px; HEIGHT: 157px
+}
+.num {
+	RIGHT: 10px; FLOAT: right; BOTTOM: 10px; POSITION: absolute
+}
+.num LI {
+	FONT-SIZE: 12px; BACKGROUND:url(flashbutton.gif) no-repeat -15px 0px; FLOAT: left; MARGIN: 2px; WIDTH: 15px; CURSOR: pointer; COLOR: #86a2b8; LINE-HEIGHT: 15px; FONT-FAMILY: Arial; LIST-STYLE-TYPE: none; HEIGHT: 15px; TEXT-ALIGN: center
+}
+.num LI.on {
+	BACKGROUND: url(flashbutton.gif) no-repeat; WIDTH: 15px; COLOR: #ffffff; LINE-HEIGHT: 15px; HEIGHT: 15px
+}

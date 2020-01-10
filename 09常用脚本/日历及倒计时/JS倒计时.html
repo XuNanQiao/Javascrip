@@ -1,0 +1,358 @@
+JS倒计时代码
+第一种：精确到秒的javascript倒计时代码   
+
+
+
+HTML代码:   
+
+<form name="form1">   
+<div align="center" align="center">   
+<center>离2010年还有:<br>   
+<input type="textarea" name="left" size="35" style="text-align: center">   
+</center>   
+</div>   
+</form>   
+<script LANGUAGE="javascript">   
+startclock()   
+var timerID = null;   
+var timerRunning = false;   
+function showtime() {   
+Today = new Date();   
+var NowHour = Today.getHours();   
+var NowMinute = Today.getMinutes();   
+var NowMonth = Today.getMonth();   
+var NowDate = Today.getDate();   
+var NowYear = Today.getYear();   
+var NowSecond = Today.getSeconds();   
+if (NowYear <2000)   
+NowYear=1900+NowYear;   
+Today = null;   
+Hourleft = 23 - NowHour   
+Minuteleft = 59 - NowMinute   
+Secondleft = 59 - NowSecond   
+Yearleft = 2009 - NowYear   
+Monthleft = 12 - NowMonth - 1 
+Dateleft = 31 - NowDate   
+if (Secondleft<0)   
+{   
+Secondleft=60+Secondleft;   
+Minuteleft=Minuteleft-1;   
+}   
+if (Minuteleft<0)   
+{    
+Minuteleft=60+Minuteleft;   
+Hourleft=Hourleft-1;   
+}   
+if (Hourleft<0)   
+{   
+Hourleft=24+Hourleft;   
+Dateleft=Dateleft-1;   
+}   
+if (Dateleft<0)   
+{   
+Dateleft=31+Dateleft;   
+Monthleft=Monthleft-1;   
+}   
+if (Monthleft<0)   
+{   
+Monthleft=12+Monthleft;   
+Yearleft=Yearleft-1;   
+}   
+Temp=Yearleft+'年, '+Monthleft+'月, '+Dateleft+'天, '+Hourleft+'小时, '+Minuteleft+'分, '+Secondleft+'秒' 
+document.form1.left.value=Temp;   
+timerID = setTimeout("showtime()",1000);   
+timerRunning = true;   
+}   
+var timerID = null;   
+var timerRunning = false;   
+function stopclock () {   
+if(timerRunning)   
+clearTimeout(timerID);   
+timerRunning = false;   
+}   
+function startclock () {   
+stopclock();   
+showtime();   
+}   
+// -->   
+</script>   
+
+
+
+
+
+
+第二种：某某运动会   
+
+
+
+HTML代码:   
+<!--倒计时Javascript begin-->   
+<script language="JavaScript">   
+<!--    
+function DigitalTime1()   
+{    
+var deadline= new Date("08/13/2007") //开幕倒计时   
+var symbol="8月13日" 
+var now = new Date()   
+var diff = -480 - now.getTimezoneOffset() //是北京时间和当地时间的时间差   
+var leave = (deadline.getTime() - now.getTime()) + diff*60000 
+var day = Math.floor(leave / (1000 * 60 * 60 * 24))   
+var hour = Math.floor(leave / (1000*3600)) - (day * 24)   
+var minute = Math.floor(leave / (1000*60)) - (day * 24 *60) - (hour * 60)   
+var second = Math.floor(leave / (1000)) - (day * 24 *60*60) - (hour * 60 * 60) - (minute*60)   
+
+var deadline_2= new Date("08/13/2004") //开幕后计时   
+var symbol_2="8月13日" 
+var now_2 = new Date()   
+var diff_2 = -480 - now.getTimezoneOffset() //是北京时间和当地时间的时间差   
+var leave_2 = (now_2.getTime() - deadline_2.getTime()) + diff_2*60000 
+var day_2 = Math.floor(leave_2 / (1000 * 60 * 60 * 24))   
+var hour_2 = Math.floor(leave_2 / (1000*3600)) - (day_2 * 24)   
+var minute_2 = Math.floor(leave_2 / (1000*60)) - (day_2 * 24 *60) - (hour_2 * 60)   
+var second_2 = Math.floor(leave_2 / (1000)) - (day_2 * 24 *60*60) - (hour_2 * 60 * 60) - (minute_2*60)   
+    
+day=day+1;   
+day_2=day_2+1;   
+
+if (day>0) //还未开幕   
+{   
+//LiveClock1.innerHTML = "现在"+symbol+"天"   
+LiveClock1.innerHTML = "<font 
+setTimeout("DigitalTime1()",1000)   
+}   
+
+if (day<0) //已经开幕   
+{   
+//LiveClock1.innerHTML = "现在离"+symbol+"还有"+day+"天"+hour+"小时"+minute+"分"+second +"秒"   
+LiveClock1.innerHTML = "<font 
+setTimeout("DigitalTime1()",1000)   
+
+}   
+
+if (day==0) //正在开幕   
+{   
+//LiveClock1.innerHTML = "现在"+symbol+"天"   
+LiveClock1.innerHTML = "<font 
+setTimeout("DigitalTime1()",1000)   
+}   
+
+    
+    
+if (day<0 & day_2>19) //某某运动会结束   
+{   
+//LiveClock1.innerHTML = "现在离"+symbol+"还有"+day+"天"+hour+"小时"+minute+"分"+second +"秒"   
+LiveClock1.innerHTML = "<font 
+setTimeout("DigitalTime1()",1000)   
+
+}   
+
+}   
+// -->   
+</script>   
+<!--倒计时Javascript end-->   
+<body onload=DigitalTime1()>   
+<div id= LiveClock1></div>   
+
+</body>
+
+ 
+
+第三种：小时倒计时   
+
+
+
+HTML代码:   
+<SCRIPT LANGUAGE="JavaScript">   
+<!--   
+var maxtime = 60*60 //一个小时，按秒计算，自己调整!   
+function CountDown(){   
+if(maxtime>=0){   
+minutes = Math.floor(maxtime/60);   
+seconds = Math.floor(maxtime%60);   
+msg = "距离结束还有"+minutes+"分"+seconds+"秒";   
+document.all["timer"].innerHTML=msg;   
+if(maxtime == 5*60) alert('注意，还有5分钟!');   
+--maxtime;   
+}   
+else{   
+clearInterval(timer);   
+alert("时间到，结束!");   
+}   
+}   
+timer = setInterval("CountDown()",1000);   
+//-->   
+</SCRIPT>   
+<div id="timer" style="color:red"></div>   
+
+
+
+
+
+
+第四种：最简倒计时   
+
+
+
+HTML代码:   
+<Script Language="JavaScript">    
+<!-- Begin    
+　　var timedate= new Date("January 14,2006");    
+　　var times="研究生考试";    
+　　var now = new Date();    
+　　var date = timedate.getTime() - now.getTime();    
+　　var time = Math.floor(date / (1000 * 60 * 60 * 24));    
+　　if (time >= 0) ;   
+document.write("<li><font color=#DEDBDE>现在离2006年"+times+"还有: <font color=#ffffff><b>"+time +"</b></font> 天</font></li>");   
+// End -->   
+</Script>   
+
+
+
+
+
+
+第五种：最简倒计时二   
+
+
+
+HTML代码:   
+<script language="JavaScript" type="text/javascript">   
+function djs(){   
+var urodz= new Date("11/12/2008");　   
+var now = new Date();   
+var num   
+var ile = urodz.getTime() - now.getTime();　　   
+var dni = Math.floor(ile / (1000 * 60 * 60 * 24));　　   
+if (dni >1)　　   
+num=dni+1 
+else if (dni == 1)　num=2　   
+else if (dni == 0)　num=1 
+else num=0　   
+document.write(num)　　   
+}   
+</script>   
+
+距某某开幕式还有 [<script language="JavaScript" type="text/javascript">djs()</script>] 天   
+第五个：Javascript倒计时器 - 采用系统时间自校验   
+这次利用系统时间自校验倒计时, 无需手工调校使得倒计时更为精确, 代码及详细注释如下:   
+
+<span id="clock">00:01:11:00</span>   
+<input id="startB" type="button" value="start countdown!" onclick="run()">   
+<input id="endB" type="button" value="stop countdown!" onclick="stop()">   
+<br>   
+<input id="diff" type="text">   
+<input id="next" type="text">   
+<script language="Javascript">   
+/* This notice must be untouched at all times. 
+
+countdown.js    v. 1.0 
+The latest version is available at 
+http://blog.csdn.net/yjgx007 
+
+Copyright (c) 2004 Xinyi.Chen. All rights reserved. 
+Created 7/30/2004 by Xinyi.Chen.   
+Web: http://blog.csdn.net/yjgx007 
+E-Mail: chenxinyi1978@hotmail.com 
+Last modified: 7/30/2004 
+
+This program is free software; 
+you can redistribute it and/or modify it under the terms of the 
+GNU General Public License as published by the Free Software Foundation; 
+
+See the GNU General Public License 
+at http://www.gnu.org/copyleft/gpl.html for more details. 
+*/ 
+var normalelapse = 100;   
+var nextelapse = normalelapse;   
+var counter;    
+var startTime;   
+var start = clock.innerText;    
+var finish = "00:00:00:00";   
+var timer = null;   
+
+// 开始运行   
+function run() {   
+startB.disabled = true;   
+endB.disabled = false;   
+counter = 0;   
+// 初始化开始时间   
+startTime = new Date().valueOf();   
+
+// nextelapse是定时时间, 初始时为100毫秒   
+// 注意setInterval函数: 时间逝去nextelapse(毫秒)后, onTimer才开始执行   
+timer = window.setInterval("onTimer()", nextelapse);    
+}   
+
+// 停止运行   
+function stop() {   
+startB.disabled = false;   
+endB.disabled = true;   
+window.clearTimeout(timer);   
+}   
+
+window.onload = function() {   
+endB.disabled = true;   
+}   
+
+// 倒计时函数   
+function onTimer()   
+{   
+
+if (start == finish)   
+{   
+window.clearInterval(timer);   
+alert("time is up!");   
+return;   
+}   
+
+var hms = new String(start).split(":");   
+var ms = new Number(hms[3]);   
+var s = new Number(hms[2]);   
+var m = new Number(hms[1]);   
+var h = new Number(hms[0]);   
+     
+ms -= 10;   
+if (ms < 0)   
+{   
+ms = 90;   
+s -= 1;   
+if (s < 0)   
+{   
+    s = 59;   
+    m -= 1;   
+}   
+     
+if (m < 0)   
+{   
+    m = 59;   
+    h -= 1;   
+}   
+}   
+
+var ms = ms < 10 ? ("0" + ms) : ms;   
+var ss = s < 10 ? ("0" + s) : s;   
+var sm = m < 10 ? ("0" + m) : m;   
+var sh = h < 10 ? ("0" + h) : h;   
+
+start = sh + ":" + sm + ":" + ss + ":" + ms;   
+clock.innerText = start;   
+
+// 清除上一次的定时器   
+window.clearInterval(timer);   
+
+// 自校验系统时间得到时间差, 并由此得到下次所启动的新定时器的时间nextelapse   
+counter++;    
+var counterSecs = counter * 100;   
+var elapseSecs = new Date().valueOf() - startTime;   
+var diffSecs = counterSecs - elapseSecs;   
+nextelapse = normalelapse + diffSecs;   
+diff.value = counterSecs + "-" + elapseSecs + "=" + diffSecs;   
+next.value = "nextelapse = " + nextelapse;   
+if (nextelapse < 0) nextelapse = 0;   
+
+// 启动新的定时器   
+timer = window.setInterval("onTimer()", nextelapse);    
+}   
+</script>
+

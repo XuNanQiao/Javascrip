@@ -1,0 +1,87 @@
+
+BODY {
+	FONT-SIZE: 12px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+LI A {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #33779e; FONT-FAMILY: ??; TEXT-DECORATION: none
+}
+LI A:link {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #33779e; FONT-FAMILY: ??; TEXT-DECORATION: none
+}
+LI A:visited {
+	TEXT-DECORATION: none
+}
+LI A:hover {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+LI A:active {
+	COLOR: #333333; TEXT-DECORATION: underline
+}
+.topban {
+	BORDER-RIGHT: #dbdee3 1px solid; BORDER-TOP: #dbdee3 1px solid; BORDER-LEFT: #dbdee3 1px solid; WIDTH: 692px; BORDER-BOTTOM: #dbdee3 1px solid;margin-top:50px;
+}
+
+
+
+
+
+#ifocus {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; OVERFLOW: hidden; WIDTH: 690px; PADDING-TOP: 1px; POSITION: relative; HEIGHT: 295px
+}
+#ifocus_pic {
+	DISPLAY: inline; OVERFLOW: hidden; WIDTH: 690px; HEIGHT: 230px
+}
+#ifocus_piclist {
+	WIDTH: 100%; POSITION: absolute
+}
+#ifocus_piclist LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: text-top; OVERFLOW: hidden; WIDTH: 690px; PADDING-TOP: 0px; POSITION: relative; HEIGHT: 230px
+}
+#ifocus_piclist IMG {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 100%
+}
+#ifocus_piclist .focusTitle {
+	FILTER: Alpha(Opacity=50); LEFT: 0px; WIDTH: 100%; LINE-HEIGHT: 30px; POSITION: absolute; TOP: 0px; HEIGHT: 30px; moz-opacity: 0.5
+}
+#ifocus_piclist .focusTitlet {
+	FONT-WEIGHT: 700; FONT-SIZE: 16px; Z-INDEX: 999; BACKGROUND: #fff; FILTER: Alpha(Opacity=50); LEFT: 0px; WIDTH: 100%; BOTTOM: 0px; LINE-HEIGHT: 30px; POSITION: absolute; HEIGHT: 30px; moz-opacity: 0.5
+}
+
+
+
+#ifocus_btn {
+	DISPLAY: block; LEFT: 0px; OVERFLOW: hidden; WIDTH: 690px; BOTTOM: 0px; POSITION: absolute; HEIGHT: 64px;margin-top:2px;
+}
+#ifocus_btn UL {
+	HEIGHT: 64px
+}
+#ifocus_btn LI {
+	BORDER-RIGHT: #d0d4d7 1px solid; BORDER-TOP: #d0d4d7 1px solid; BACKGROUND: url(discovery_0720_17.gif); FLOAT: left; MARGIN: 0px 2px; VERTICAL-ALIGN: bottom; OVERFLOW: hidden; BORDER-LEFT: #d0d4d7 1px solid; WIDTH: 84px; CURSOR: pointer; BORDER-BOTTOM: #d0d4d7 1px solid; HEIGHT: 62px
+}
+#ifocus_btn LI A {
+	DISPLAY: block; FLOAT: left; OVERFLOW: hidden; WIDTH: 198px; COLOR: #33779e; HEIGHT: 25px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+#ifocus_btn LI SPAN {
+	PADDING-RIGHT: 20px; BACKGROUND: url(discovery_0720_20.gif) no-repeat right 0px; PADDING-BOTTOM: 3px; LINE-HEIGHT: 30px; PADDING-TOP: 3px
+}
+#ifocus_btn LI P {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 198px; LINE-HEIGHT: 20px; HEIGHT: 40px; TEXT-ALIGN: left
+}
+#ifocus_btn LI IMG {
+	FLOAT: left; WIDTH: 84px; MARGIN-RIGHT: 5px; HEIGHT: 62px
+}
+#ifocus_btn .current {
+	WIDTH: 322px
+}
+
+
+

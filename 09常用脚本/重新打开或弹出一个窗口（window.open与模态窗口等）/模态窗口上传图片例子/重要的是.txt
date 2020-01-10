@@ -1,0 +1,7 @@
+在打开的子窗口中加入
+
+
+<head runat="server">
+    <title></title>
+                      重要<base target="_self" />
+</head>

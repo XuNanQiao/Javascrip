@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title></title>
+<link href="index.css" rel="stylesheet" type="text/css">
+
+    <script src="jquery_002.js" type="text/javascript"></script>
+    <script language="javascript" type="text/javascript">
+
+        $(document).ready(function() {
+            //菜单展开和隐藏
+            $('#categoryarea li').hover(function() {
+                $(this).children('div').stop(true, true).show();
+                $(this).addClass("current_li");
+            }, function() {
+                $(this).children('div').stop(true, true).hide();
+                $(this).removeClass("current_li");
+            });
+            /* 展开 */
+            var item = $('.sl_slschoolright .sl_slrmzy');
+            var iheight = item.height();
+            var num = parseInt(iheight);
+            if (num > 24) {
+                item.css('height', '24px');
+            }
+        });
+            function foldPan(id) {
+                var itemFold = id;
+                var type = itemFold.className;
+                if (type.indexOf('fold') >= 0 && type.length == 4) {
+                    itemFold.className = 'unfold';
+                    itemFold.parentNode.style.height = "auto"
+                } else {
+
+                    itemFold.className = 'fold';
+                    itemFold.parentNode.style.height = "24px";
+                }
+            }
+    </script>
+
+</head>
+<body>
+            <div style="height: 24px;" class="sl_slrmzy">
+                            <span class="sl_slrmzyspan1">招生地市：</span>
+                            <span class="sl_slrmzyspan2">青岛、济南、东营、烟台、威海、淄博、潍坊、济宁、枣庄、莱芜、泰安、德州、日照、聊城、滨州、临沂、菏泽</span>
+                            <span class="fold" onclick="foldPan(this)"></span>
+            </div>
+</body></html>

@@ -1,0 +1,41 @@
+BODY {
+	padding-right: 0px;
+	padding-left: 0px;
+	background: #000;
+	padding-bottom: 0px;
+	margin: 0px;
+	padding-top: 0px;
+	text-aling: center;
+	background-color: #FFF;
+}
+td, tr, input, select{font-size:12px; line-height:150%;}
+a:link{color:#000000; text-decoration:none;}
+a:visited{color:#000000; text-decoration:none;}
+a:hover{color:#FF3300;; text-decoration:underline;}
+a:active{color:#FF3300; text-decoration:underline}
+
+
+/* Ωπµ„Õº*/
+.link14bl3          {color:#7DC0D0; font-size:14px; font-weight: bold;line-height:150%;}
+a.link14bl3:link     {color:#7DC0D0; text-decoration:none;}
+a.link14bl3:visited  {color:#7DC0D0; text-decoration:none;}
+a.link14bl3:hover    {color:#CCC; text-decoration:underline;}
+a.link14bl3:active   {color:#CCC; text-decoration:underline;}
+
+.link14w2           {color:#fff; font-size:14px;font-weight: bold; line-height:150%;}
+a.link14w2:link     {color:#fff; text-decoration:underline;}
+a.link14w2:visited  {color:#fff; text-decoration:underline;}
+a.link14w2:hover    {color:#CCC; text-decoration:underline;}
+a.link14w2:active   {color:#CCC; text-decoration:underline;}
+
+.itemOff {
+	BORDER-RIGHT: #FF6600 1px solid; BORDER-TOP: #FF6600 1px solid; FONT-SIZE: 12px; COLOR: #FFFFFF; BORDER-LEFT: #FF6600 1px solid; CURSOR: pointer; BORDER-BOTTOM: #FF6600 1px solid; FONT-FAMILY: Arial;  BACKGROUND-COLOR: #990000; TEXT-ALIGN: center
+}
+.itemOn {
+	BORDER-RIGHT: #FF6600 1px solid; BORDER-TOP: #FF6600 1px solid; FONT-SIZE: 12px; COLOR: #FFFFFF;BORDER-LEFT: #FF6600 1px solid; CURSOR: default; BORDER-BOTTOM: #FF6600 1px solid; FONT-FAMILY: Arial; FONT-COLOR: #FFFFFF; BACKGROUND-COLOR: #FF6600; TEXT-ALIGN: center
+}
+
+#Layer2 {position:absolute;width:302px;height:115px;z-index:2;top: 350px;left: 0px;}
+#Layer4 {position:absolute;width:280px;height:400px;z-index:1;top: 0px;left: 9px;}
+#Layer5 {position:absolute;width:200px;height:115px;z-index:2;}
+#Layer6 {position:absolute;width:302px;height:488px;z-index:3;}

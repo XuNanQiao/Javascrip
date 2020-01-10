@@ -1,0 +1,24 @@
+1、
+页面最上面
+<script language="JavaScript">
+    window.ClearEvent = function() {
+        event.cancelBubble = false; var sSrcTagName = event.srcElement.tagName.toLowerCase();
+        return (sSrcTagName == "textarea" || sSrcTagName == "input" || sSrcTagName == "select");
+    }
+    window.ClearKey = function() { event.cancelBubble = false; var iKeyCode = event.keyCode; return !(iKeyCode == 78 && event.ctrlKey); }
+    with (window.document) { oncontextmenu = onselectstart = ondragstart = window.ClearEvent; onkeydown = window.ClearKey; }
+</script>
+
+
+body里面
+<span id="jnkc"></span>
+<script>setInterval("jnkc.innerHTML=new Date().toLocaleString();", 1000);</script>
+
+
+
+
+
+2、
+body里面
+<span id="time"></span>
+<script type="text/javascript" language="javascript">time.innerHTML = new Date().toLocaleDateString();</script>

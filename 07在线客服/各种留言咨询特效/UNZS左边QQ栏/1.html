@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<LINK href="css.css" type=text/css rel=stylesheet>
+</head>
+<body>
+<SCRIPT src="1/jquery.js" type=text/javascript></SCRIPT>
+<SCRIPT src="1/jcarousellite.js" type=text/javascript></SCRIPT>
+<!-- 在线客服 -->
+<DIV id=qqService style="Z-INDEX: 100; LEFT: 5px; POSITION: absolute; TOP: 40px">
+<DIV class=top>
+<DIV title=点击关闭 onclick=qqServiceClose();></DIV></DIV>
+<DIV class=mid id=qqContent><IMG src="1/loading.gif">正在载入... </DIV>
+<DIV class=bot></DIV></DIV>
+<SCRIPT type=text/javascript>
+    //图片循环
+    $(document).ready(function() {
+        $(".jCarouselLite").jCarouselLite({ btnNext: ".next", btnPrev: ".prev", auto: 8000, scroll: 1, visible: 1, speed: 1000 });
+        $(".jCarouselLite1").jCarouselLite({ btnNext: ".next1", btnPrev: ".prev1", auto: 1000, scroll: 1, visible: 4, speed: 1000 });
+    });
+    //在线客服BEGIN
+    var online = new Array(), qqGroup = new Array(), qqList = new Array();
+    //网校通
+    qqGroup[0] = "山大自考";
+    qqList[0] = [{ name: "兰老师", qq: "320154128" }, { name: "杜老师", qq: "172275695" }, { name: "陈老师", qq: "121532249"}];
+    //客服
+    qqGroup[1] = "山经客服";
+    qqList[1] = [{ name: "游老师", qq: "906856089" }, { name: "吴老师", qq: "713000956"}, { name: "覃老师", qq: "1192871259" }];
+    //资料问题
+    qqGroup[2] = "山财自考";
+    qqList[2] = [{ name: "林老师", qq: "276816135" }, { name: "王老师", qq: "713000133"}];
+    //资源产品
+    qqGroup[3] = "济大自考";
+    qqList[3] = [{ name: "王老师", qq: "569484045"}, { name: "戴老师", qq: "362440521" }];
+    //广告合作
+    qqGroup[4] = "山艺自考";
+    qqList[4] = [{ name: "陈老师", qq: "842363313"}, { name: "戴老师", qq: "362440521" }];
+    //E网通咨询
+    qqGroup[5] = "中港海员";
+    qqList[5] = [{ name: "李老师", qq: "1312370175"}, { name: "戴老师", qq: "362440521" }];
+
+    var outerHTML = "", allqqList = "", orderNumber = 0;
+    for (var iG = 0; iG < qqGroup.length; iG++) {
+        outerHTML += "<b>" + qqGroup[iG] + "</b>";
+        for (var iL = 0; iL < qqList[iG].length; iL++) {
+			var qqItem = qqList[iG][iL];
+            outerHTML += "<p>" + qqItem.name + " <a target=\"blank\" href=\"tencent://message/?uin=" + qqItem.qq + "&Site=山东联合招生网(Www.Unzs.Com)&Menu=yes\"><img src=\"1/offline.gif\" border=\"0\" id=\"Order_" + orderNumber + "\" /></a></p>";
+            allqqList += qqItem.qq + ":";
+            orderNumber++;
+        }
+    }
+    document.getElementById("qqContent").innerHTML = outerHTML;
+    document.write("<sc" + "ript type=\"text/javascript\" src=\"http://wpa.qq.com/getonline?" + allqqList + "\"></scr" + "ipt>");
+</SCRIPT>
+
+<SCRIPT type=text/javascript>
+    function qqServiceClose() {
+        document.body.removeChild(document.getElementById("qqService"));
+    }
+    for (var i = 0; i < online.length; i++) {
+        if (online[i] == 1) {
+            document.getElementById("Order_" + i).src = "1/online.gif";
+        }
+    }
+</SCRIPT>
+
+</body>
+</html>

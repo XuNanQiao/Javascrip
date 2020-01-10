@@ -1,0 +1,56 @@
+
+http://apps.hi.baidu.com/share/detail/5877593
+
+
+
+
+
+PNG在IE6下透明的css解决方案 
+ie6并不是不支持png，它支持索引颜色的PNG-8，而是不支持RGB颜色的PNG-24。
+
+ie6里的PNG-24图片做背景主要有以下几个问题：
+
+
+
+
+一、ie6里png背景透明问题：解决办法用滤镜。这个一般高手们都知道。
+
+注意：src 这个路径是指加载滤镜的页面相对于图片的路径，而不是css文件相对于图片的路径。这跟一般的图片加载有区别。
+
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src=”图片名称”);
+_ background-image: none;
+
+二、ie6里png背景做循环问题：用一个2px*2px的半透明图片做背景循环。解决办法加“sizingMethod=scale”。
+
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale, src=”图片名称”);
+_ background-image: none;
+
+三、ie6里不做循环的大png图片背景会出现区块被剪切，网站版面一片混乱，文字消失问题：解决办法加sizingMethod=crop。
+
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=crop,src=”图片名称”)
+_ background-image: none;
+
+四、ie6里png背景下的的连接失效：解决办法给a元素添加样式position:relative;
+
+五、ie7里png背景下的div下的dl dt dd ul li 等有float浮动时，连接文字在鼠标滑过出现一条背景消失的问题。解决办法是给包含dl dt dd ul li的div大盒子加上一个高度或最小高度。
+
+min-height:50px; 因为ie6下没有这个问题，min-height:又是ie6不支持的，ie7和FF支持，而div要随着文字而伸长，所以我就采用了min-height:。
+
+六、最后关于png背景定位的问题。 我实在没想出来用解决的办法，我加了“sizingMethod=scale”。让它在ie6里放大去吧，虽然效果上没有FF好，但是总比贴着最左边看起来舒服。
+
+/******************css***********************/
+
+#footer_content{width:760px;height:85px;margin:0 auto;padding:80px 0 40px 150px;position:relative;}
+#ci_logo{background:url(images/footer_logo.png) no-repeat;width:160px;height:85px;margin:0 auto;_background:none;
+_filter:progid:dximagetransform.microsoft.alphaimageloader(src='/style/images/footer_logo.png', sizingMethod='crop');position:absolute;top:80px;left:12px;}
+/********************html*******************/
+
+<div id="footer_content">
+             <div id="ci_logo"></div>
+</div>
+
+需要注意的是图片路径
+
+原文：http://hi.baidu.com/dandan%5Fze/blog/item/ec3f4e8a442825739f2fb42f.html
+
+

@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta content="0087-FLASH图片轮换播放器的js广告代码" name="keywords" />
+<title>FLASH图片轮换播放器,广告下载-www.knowsky.com</title>
+</head>
+
+<body>
+<br />
+<div align="center">
+<script language=javascript>
+var tmpHTML = '';
+tmpHTML = tmpHTML + '<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" WIDTH="285" HEIGHT="190" id="flashview" ALIGN="">'
+tmpHTML = tmpHTML + '<PARAM NAME=movie VALUE="flash/flashview.swf'
+tmpHTML = tmpHTML + '?txt01=www.knowsky.com'
+tmpHTML = tmpHTML + '&txt02=www.knowsky.com'
+tmpHTML = tmpHTML + '&txt03=www.knowsky.com'
+tmpHTML = tmpHTML + '&txt04=www.knowsky.com'
+tmpHTML = tmpHTML + '&txt05=www.knowsky.com'
+	
+tmpHTML = tmpHTML 
++ '&img_001=images/01.jpg'
+tmpHTML = tmpHTML 
++ '&img_002=images/02.jpg'
+tmpHTML = tmpHTML
++ '&img_003=images/03.jpg'
+tmpHTML = tmpHTML 
++ '&img_004=images/04.jpg'
+tmpHTML = tmpHTML 
++ '&img_005=images/05.jpg'	
+tmpHTML = tmpHTML + '&url_001=javascript:goURL(1);'
+tmpHTML = tmpHTML + '&url_002=javascript:goURL(2);'
+tmpHTML = tmpHTML + '&url_003=javascript:goURL(3);'
+tmpHTML = tmpHTML + '&url_004=javascript:goURL(4);'
+tmpHTML = tmpHTML + '&url_005=javascript:goURL(5);" /><PARAM NAME=quality VALUE=high><PARAM NAME=bgcolor VALUE=#C0E2D2><EMBED src="flash/flashview.swf" quality=high bgcolor=#C0E2D2 WIDTH="285" HEIGHT="190" ALIGN="" TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer"></EMBED>'
+tmpHTML = tmpHTML + '</OBJECT>'
+printHTML(tmpHTML);
+function goURL(str) {
+var url_001 = "http://www.knowsky.com/";
+var url_002 = "http://www.knowsky.com/";
+var url_003 = "http://www.knowsky.com/";
+var url_004 = "http://www.knowsky.com/";
+var url_005 = "http://www.knowsky.com/";
+window.open(eval("url_00"+str));
+}
+function printHTML(str) {
+	var strHTML = str;
+	document.write(strHTML);
+}
+</script>
+</div>
+
+</body>
+
+
+</body>
+</html>

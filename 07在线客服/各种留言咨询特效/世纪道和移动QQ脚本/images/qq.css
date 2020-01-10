@@ -1,0 +1,69 @@
+
+BODY {font-family: "新宋体";margin:0 auto; font-size:12px; margin:0px;padding:0px;color:#5E5E5E;}
+Table{font-family: "新宋体";font-size: 12px;}
+a:link{color: #4D4D4D; TEXT-DECORATION: none}
+a:visited{color: #4D4D4D; TEXT-DECORATION: none}
+a:hover{color: #FF6600;text-decoration:none}
+a:active{color:#9900CC;text-decoration:none}
+
+
+#tq_float_m_content IMG {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px
+}
+.Qbox {
+	Z-INDEX: 99; RIGHT: 0px; WIDTH: 178px; POSITION: absolute; TOP: 145px
+}
+.Qbox IMG {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.Qlist {
+	LEFT: 0px; WIDTH: 145px; POSITION: absolute
+}
+.Qlist .b {
+	BACKGROUND: url(q_listbg.gif) no-repeat right 50%
+}
+.Qlist .con {
+	BACKGROUND: url(q_listbg.gif) repeat-y -155px 0px
+}
+.Qlist .con UL {
+	BACKGROUND: #fff; MARGIN: 0px auto; WIDTH: 90%; PADDING-TOP: 7px
+}
+.Qlist .con H2 {
+	BACKGROUND: url(q_listbg.gif) repeat-y -163px 0px; MARGIN: 0px auto; FONT: bold 14px ""; WIDTH: 90%; COLOR: #fff; HEIGHT: 22px; TEXT-ALIGN: center
+}
+.Qlist .con H2 SPAN {
+	FONT-SIZE: 9px; LEFT: 10px; CURSOR: pointer; COLOR: #fff; FONT-FAMILY: Verdana; POSITION: relative; TOP: -1px
+}
+.Qlist .con LI {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; PADDING-TOP: 5px
+}
+.Qlist .con LI SPAN {
+	PADDING-RIGHT: 5px; DISPLAY: block; FLOAT: left; WIDTH: 23px
+}
+.Qlist .con LI SPAN IMG {
+	FLOAT: right
+}
+.Qlist .t {
+	BACKGROUND: url(q_listbg.gif) no-repeat left 50%
+}
+.Qlist .t {
+	FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 6px
+}
+.Qlist .b {
+	FONT-SIZE: 1px; OVERFLOW: hidden; HEIGHT: 6px
+}
+.Q53 {
+	DISPLAY: none
+}
+.Q53 IMG {
+	MARGIN: 0px 0px 0px 18px
+}
+.press {
+	CURSOR: pointer; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#divMenu {
+	RIGHT: 0px; BACKGROUND: url(q_b.gif) no-repeat; WIDTH: 33px; POSITION: absolute; HEIGHT: 158px
+}
+.Qtel {
+	MARGIN-LEFT: -4px; COLOR: red; TEXT-ALIGN: left
+}

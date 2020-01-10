@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="keywords" content="JS代码,焦点图,JS广告代码,JS特效代码" />
+<meta name="description" content="此代码内容为顶部附广告的大按钮焦点图，属于站长常用代码，更多焦点图代码请访问懒人图库JS代码频道。" />
+<title>顶部附广告的大按钮焦点图_懒人图库</title>
+<SCRIPT src="js/common.js" type=text/javascript></SCRIPT>
+
+</HEAD>
+<BODY>
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td><script language="JavaScript" type="text/javascript">
+<!--
+/*seateng@sohu.com 2008-1-4 11:02*/
+var FocusCoverAD = {
+show:function(config)
+{
+document.write('<div id="focus_up"><a href="'+config.url+'" target="_blank" onmouseover="FocusCoverAD.up()"><img height=25 src="'+config.focusUp+'" width=380 border=0></a></div><div id="focus_over" style="position:absolute;visibility:hidden" onmouseout="FocusCoverAD.down()"></div><scr'+'ipt for="focus_ad" language="javascript" event="fscommand(common,args)">focus_ad_DoFSCommand(common,args);</scri'+'pt>');
+this.sVars = 'flashurl='+config.focusCover+'&linkurl='+config.url;
+this.sohuFlashFocover = new sohuFlash("swf/adoshell3.swf","focus_ad","380","300","6","#ffffff");
+this.sohuFlashFocover.addParam("quality", "high");
+this.sohuFlashFocover.addParam("wmode", "opaque");
+this.sohuFlashFocover.addParam("FlashVars", this.sVars);
+this.sohuFlashFocover.write("focus_over");
+this.focus_up = document.getElementById("focus_up");
+this.focus_over = document.getElementById("focus_over");
+this.focus_ad = document.getElementById("focus_ad");
+},
+getPosition:function(element) {
+var xy=[0,0];
+if(element) {
+xy = this.getPosition(element.offsetParent);
+xy[0] += element.offsetLeft || 0;
+xy[1] += element.offsetTop || 0;
+return xy;
+}else{
+return xy;
+}
+},
+up:function()
+{
+var pos = this.getPosition(this.focus_up);
+pos[1] += 26;
+this.focus_over.style.zIndex="1000";
+this.focus_over.style.paddingRight="0";
+this.focus_over.style.paddingLeft="0";
+this.focus_over.style.paddingTop="0";
+this.focus_over.style.paddingBottom="0";
+this.focus_over.style.backgroundColor="white";
+this.focus_over.style.left = pos[0]+"px";
+this.focus_over.style.top = pos[1]+"px";
+this.focus_over.style.visibility = "visible";
+this.focus_over.style.display = 'block';
+var me = this;
+this.timeHandle = setInterval(function(){me.setPosition()}, 15);
+this.focus_ad.Play();
+},
+setPosition:function()
+{
+var pos = this.getPosition(this.focus_up);
+pos[1] += 26;
+this.focus_over.style.left = pos[0]+"px";
+this.focus_over.style.top = pos[1]+"px";
+},
+down:function()
+{
+this.focus_over.style.visibility = "hidden";
+this.focus_over.style.display = 'block';
+clearInterval(this.timeHandle);
+this.focus_ad.Rewind();
+}
+}
+var config = {
+url:"http://www.lanrentuku.com/",
+focusUp:"images/zx-0108-38025.jpg",
+focusCover:"swf/zx-0108-380300.swf"
+}
+FocusCoverAD.show(config);
+function focus_ad_DoFSCommand(command, args)
+{
+if(command == "colose")
+	{
+	FocusCoverAD.down();
+	}
+}
+//-->
+    </script>
+      <script language="JavaScript1.1" type="text/javascript">
+var pics="images/01.jpg|images/02.jpg|images/03.jpg|images/04.jpg|images/05.jpg|images/06.jpg";
+var links="http://www.lanrentuku.com/|http://www.lanrentuku.com/|http://www.lanrentuku.com/|http://www.lanrentuku.com/|http://www.lanrentuku.com/|http://www.lanrentuku.com/";
+	document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="380" height="300">');
+	document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="swf/switch2.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+	document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+	document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'">');
+	document.write('<embed src="swf/switch2.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'" menu="false" bgcolor="#ffffff" quality="high" width="380" height="300" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />');		
+	document.write('</object>');
+      </script></td>
+  </tr>
+</table>
+
+<br>
+<table width="910" height="66" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center" style="font-size:12px">来源：<a href="http://www.17173.com/" target="_blank">17173.com</a>　 投稿：<a href="http://www.mybbss.com/" target="_blank">分享多一点</a>（一 D~  ）　代码整理：<a href="http://www.lanrentuku.com/" target="_blank">懒人图库</a>　
+    <p>＊尊重他人劳动成果，转载请自觉注明出处！</p>
+    <p>注：此代码仅供学习交流，请勿用于商业用途。</p>
+    <p></p>
+    <p></p>
+    <p><br />
+    </p></td>
+  </tr>
+</table>
+
+
+</BODY></HTML>

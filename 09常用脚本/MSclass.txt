@@ -1,0 +1,3 @@
+var MarqueeDiv3Control=new Marquee(["MarqueeDiv3","MarqueeDiv3Boxent"],2,0.2,480,115,20,3000,3000)//向左翻屏滚动、缓动及跳过等待时间实例
+$("LeftButton3").onclick=function(){MarqueeDiv3Control.Run(2)};	//跳过等待时间向左滚动后保持原向运动
+$("RightButton3").onclick=function(){MarqueeDiv3Control.Run(3)};	//跳过等待时间向右滚动后保持原向运动

@@ -1,0 +1,11 @@
+<asp:TextBox ID="txtUrl" runat="server" Width="290px"  CssClass="readonly" contentEditable="false" ></asp:TextBox>&nbsp;  
+                        
+                        
+                        <input id="Button3" type="button" value="ÉÏ´«Í¼Æ¬"  onclick="fileupload();" style="height:22px;"/>
+
+                        <script>
+                            function fileupload() {
+                                var str = window.showModalDialog('fileUpload.aspx', '', 'dialogWidth=300px;dialogHeight=100px');
+                                document.getElementById("txtUrl").innerText = str;
+                            }
+                        </script>
